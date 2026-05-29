@@ -1,0 +1,387 @@
+﻿Park Name,Plot Identifier,Date,Day,Month,Year,Start Time,End Time,Latitude,Longitude,Observer,Temperature,Wind Speed,Habitat Type,Cloud Cover,Notes,Percent Canopy Cover
+CB Smith,CB-01,4/9/2025,9,April,2025,14:36:00,14:46,26.00884,-80.3173,Marina,79,9,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-02,4/9/2025,9,April,2025,15:01:00,15:12:00,26.0093,-80.3203,Marina,80,9,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-03,4/9/2025,9,April,2025,15:43:00,15:53:00,26.01924,-80.315,Marina,80,9,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-04,4/9/2025,9,April,2025,16:10:00,16:20:00,26.01261,-80.3188,Marina,80,7,Open Grassy,Partly Cloudy,,0
+Vista View,VV-01,4/12/2025,12,April,2025,9:00:00,9:22:00,26.0694,-80.3403,Marina,78,5,Open Grassy,Sunny,,0
+Vista View,VV-02,4/12/2025,12,April,2025,9:49:00,10:03:00,26.07214,-80.341,Marina,78,5,Open Grassy,Sunny,,0
+Vista View,VV-03,4/12/2025,12,April,2025,10:28:00,11:29:00,26.07003,-80.3461,Marina,77,6,Open Grassy,Sunny,,0
+Vista View,VV-04,4/12/2025,12,April,2025,11:54:00,12:11:00,26.06381,-80.348,Marina,77,8,Open Grassy,Sunny,,0
+Markham,MK-01,4/12/2025,12,April,2025,12:55:00,13:05:00,26.12823,-80.3623,Marina,80,9,Hammock,Sunny,very thick forest habitat ,0.8
+Markham,MK-02,4/12/2025,12,April,2025,13:35:00,13:53:00,26.13103,-80.356,Marina,80,9,Open Grassy,Sunny,habitat near water,0
+Markham,MK-03,4/12/2025,12,April,2025,14:10:00,14:20:00,26.12647,-80.3539,Marina,81,9,Open Grassy,Sunny,,0
+Markham,MK-04,4/12/2025,12,April,2025,14:35:00,14:45:00,26.12937,-80.3515,Marina,81,9,Open Grassy,Sunny,,0
+Markham,MK-05,4/12/2025,12,April,2025,14:57:00,15:07:00,26.13722,-80.3445,Marina,81,9,Australian Pine Forest,Sunny,,0.6
+Quiet Waters,QW-01,4/12/2025,12,April,2025,16:14:00,16:31:00,26.31343,-80.1552,Marina,79,10,Open Grassy,Sunny,,0
+Quiet Waters,QW-02,4/12/2025,12,April,2025,16:49:00,16:59:00,26.3058,-80.1561,Marina,79,10,Pine Flatwoods,Sunny,vegetation dry and crunchy,0.3
+Quiet Waters,QW-03,4/12/2025,12,April,2025,17:18:00,17:28:00,26.31751,-80.1668,Marina,79,10,Open Grassy,Sunny,,0
+Quiet Waters,QW-04,4/12/2025,12,April,2025,17:34:00,17:46:00,26.31704,-80.1673,Marina,79,10,Open Grassy,Sunny,,0
+Markham,MK-06,4/14/2025,14,April,2025,8:58:00,9:12:00,26.12722,-80.3617,Marina,74,1,Open Grassy,Partly Cloudy,,0
+Markham,MK-07,4/14/2025,14,April,2025,9:36:00,9:52:00,26.13725,-80.3549,Marina,74,1,Australian Pine Forest,Partly Cloudy,,0.6
+Markham,MK-08,4/14/2025,14,April,2025,10:02:00,10:13:00,26.1389,-80.3519,Marina,78,2,Open Grassy,Partly Cloudy,,0
+Markham,MK-09,4/14/2025,14,April,2025,10:46:00,10:56:00,26.12385,-80.3462,Marina,78,2,Open Grassy,Sunny,,0
+Markham,MK-10,4/14/2025,14,April,2025,11:24:00,11:34:00,26.12882,-80.3471,Marina,79,2,Open Grassy,Sunny,,0
+Long Key,LK-01,4/14/2025,14,April,2025,13:54:00,14:14:00,26.07635,-80.3255,Marina,79,2,Hammock,Sunny,,0.9
+Long Key,LK-02,4/14/2025,14,April,2025,14:24:00,14:37:00,26.07692,-80.3241,Marina,79,2,Ephemeral Wetland,Sunny,,0.9
+Long Key,LK-03,4/14/2025,14,April,2025,15:10:00,15:21:00,26.07224,-80.3168,Marina,82,7,Open Grassy,Sunny,this field used to be for horses ,0
+Highlands Scrub,HS-01,4/23/2025,23,April,2025,8:49:00,9:09:00,26.28216,-80.11045,Marina,75,10,Sand Pine Scrub,Partly Cloudy,,0
+Highlands Scrub,HS-02,4/23/2025,23,April,2025,9:38:00,9:48:00,26.28155,-80.1082,Marina,75,10,Sand Pine Scrub,Partly Cloudy,,0.4
+Highlands Scrub,HS-03,4/23/2025,23,April,2025,10:10:00,10:20:00,26.28022,-80.1083,Marina,76,10,Sand Pine Scrub,Partly Cloudy,,0
+Helene Klein,HK-01,4/23/2025,23,April,2025,11:10:00,11:20:00,26.3192,-80.1873,Marina,80,6,Pine Flatwoods,Partly Cloudy,"this swamp is a small fragment, very dry",0.9
+Helene Klein,HK-02,4/23/2025,23,April,2025,11:40:00,12:18:00,26.31807,-80.1892,Marina,81,7,Disturbed Edge,Partly Cloudy,grassy and shrubby,0
+Helene Klein,HK-03,4/23/2025,23,April,2025,12:36:00,12:46:00,26.31838,-80.1873,Marina,81,7,Pine Flatwoods,Partly Cloudy,"should have been pine flatwoods, is actually pine forest with thick canopy and understory",0.9
+Military Trail,MT-01,4/24/2025,24,April,2025,8:47:00,9:02:00,26.28746,-80.134,Marina/Nina,77,11,Disturbed Edge,Sunny,shaded but still open canopy,0
+Military Trail,MT-02,4/24/2025,24,April,2025,9:16:00,9:47:00,26.28756,-80.1326,Marina/Nina,77,14,Sand Pine Scrub,Sunny,habitat clearing in pine forest,0
+Military Trail,MT-03,4/24/2025,24,April,2025,10:15:00,10:48:00,26.286329,-80.1346,Marina/Nina,79,13,Scrubby Flatwoods,Sunny,Thick understory,0
+Quiet Waters,QW-05,4/24/2025,24,April,2025,12:21:00,12:43:00,26.30737,-80.156,Marina/Nina,82,12,Open Grassy,Mostly Sunny,,0
+Quiet Waters,QW-06,4/24/2025,24,April,2025,13:21:00,13:48:00,26.31181,-80.1580196,Marina/Nina,83,12,Ephemeral Wetland,Mostly Sunny,dry isolated wetland,0.5
+Quiet Waters,QW-07,4/24/2025,24,April,2025,14:05:00,14:30:00,26.31698,-80.1637,Marina/Nina,83,11,Open Grassy,Partly Cloudy,so much horse poop on this site,0
+Quiet Waters,QW-08,4/24/2025,24,April,2025,14:38:00,14:57:00,26.31654,-80.1641,Marina/Nina,83,12,Open Grassy,Partly Cloudy,,0
+Military Trail,MT-04,5/7/2025,7,May,2025,8:54:00,9:20:00,26.28713,-80.135,Marina/Jimmy,78,8,Oak Dominated Scrub,Sunny,,0
+Military Trail,MT-05,5/7/2025,7,May,2025,9:47:00,10:00:00,26.28755,-80.1319,Marina/Jimmy,81,9,Sand Pine Scrub,Sunny,,0.8
+Military Trail,MT-06,5/7/2025,7,May,2025,10:23:00,10:46:00,26.2868,-80.1342,Marina/Jimmy,81,10,Oak Dominated Scrub,Sunny,,0.05
+Helene Klein,HK-04,5/7/2025,7,May,2025,11:30:00,11:50:00,26.31814,-80.1887,Marina/Jimmy,84,7,Pine Flatwoods,Sunny,,0.3
+Helene Klein,HK-05,5/7/2025,7,May,2025,12:12:00,12:22:00,26.3181,-80.1891,Marina/Jimmy,85,10,Pine Flatwoods,Sunny,creeping cucumber visited by Zebra longwing near plot ,0.6
+Helene Klein,HK-06,5/7/2025,7,May,2025,12:44:00,12:54:00,26.31912,-80.189,Marina/Jimmy,86,9,Pine Flatwoods,Sunny,Carpenter ants on Serenoa repens,0.6
+Markham,MK-11,5/8/2025,8,May,2025,8:48:00,9:06:00,26.1282,-80.3544,Marina/Nina,77,4,Open Grassy,Partly Cloudy,,0
+Markham,MK-12,5/8/2025,8,May,2025,9:29:00,10:46:00,26.1247,-80.35,Marina/Nina,80,6,Open Grassy,Partly Cloudy,,0
+Markham,MK-13,5/8/2025,8,May,2025,11:18:00,11:28:00,26.1338,-80.35627,Marina/Nina,85,5,Australian Pine Forest,Sunny,hammock/australian pine mix forest,0.4
+Markham,MK-14,5/8/2025,8,May,2025,11:33:00,11:43:00,26.1332,-80.3564,Marina/Nina,86,5,Australian Pine Forest,Sunny,hammock/australian pine mix forest,0.85
+Markham,MK-15,5/8/2025,8,May,2025,12:12:00,12:23:00,26.12783,-80.3595,Marina/Nina,87,5,Open Grassy,Sunny,,0
+CB Smith,CB-05,5/8/2025,8,May,2025,13:12:00,13:26:00,26.01697,-80.3149,Marina/Nina,90,5,Open Grassy,Sunny,,0
+CB Smith,CB-06,5/8/2025,8,May,2025,13:41:00,13:54:00,26.01195,-80.3179,Marina/Nina,90,9,Open Grassy,Sunny,,0
+CB Smith,CB-07,5/8/2025,8,May,2025,14:05:00,14:15:00,26.01817,-80.315,Marina/Nina,90,9,Open Grassy,Sunny,,0
+CB Smith,CB-08,5/8/2025,8,May,2025,14:27:00,14:37:00,26.0146,-80.315,Marina/Nina,90,9,Open Grassy,Sunny,,0.05
+Long Key,LK-04,5/19/2025,19,May,2025,9:45:00,10:05:00,26.07699,-80.3252,Marina/Nina/Jimmy,84,4,Ephemeral Wetland,Partly Cloudy,,0.05
+Long Key,LK-05,5/19/2025,19,May,2025,10:25:00,11:40:00,26.07594,-80.3228,Marina/Nina/Jimmy,87,4,Open Grassy,Mostly Sunny,disturbed area,0
+Long Key,LK-06,5/19/2025,19,May,2025,11:53:00,12:03:00,26.07387,-80.325,Marina/Nina/Jimmy,89,3,Hammock,Mostly Sunny,,0.95
+Vista View,VV-05,5/19/2025,19,May,2025,12:52:00,13:32:00,26.06925,-80.3426,Marina/Nina/Jimmy,90,4,Open Grassy,Sunny,,0
+Vista View,VV-06,5/19/2025,19,May,2025,13:45:00,14:13:00,26.0684,-80.3444,Marina/Nina/Jimmy,91,6,Open Grassy,Sunny,,0
+Vista View,VV-07,5/19/2025,19,May,2025,14:39:00,14:53:00,26.07378,-80.3388,Marina/Nina/Jimmy,92,6,Open Grassy,Sunny,,0.1
+Vista View,VV-08,5/19/2025,19,May,2025,16:15:00,16:27:00,26.06477,-80.3419,Marina/Nina,92,9,Open Grassy,Mostly Sunny,,0
+Highlands Scrub,HS-04,5/21/2025,21,May,2025,8:39:00,8:49:00,26.28103,-80.1111,Marina/Nina,81,6,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-05,5/21/2025,21,May,2025,9:07:00,9:35:00,26.28186,-80.11,Marina/Nina,83,7,Sand Pine Scrub,Sunny,,0.01
+Highlands Scrub,HS-06,5/21/2025,21,May,2025,9:35:00,10:05:00,26.2824,-80.1109,Marina/Nina,84,6,Sand Pine Scrub,,,0.01
+Quiet Waters,QW-09,5/21/2025,21,May,2025,10:48:00,10:59:00,26.307,-80.1582,Marina/Nina,90,6,Disturbed Edge,Sunny,marshy/water's edge,0
+Quiet Waters,QW-10,5/21/2025,21,May,2025,12:14:00,12:24:00,26.31321,-80.1579,Marina/Nina,91,5,Open Grassy,Sunny,,0.2
+Quiet Waters,QW-11,5/21/2025,21,May,2025,12:57:00,13:07:00,26.31175,-80.1602,Marina/Nina,92,3,Pine Flatwoods,Sunny,"forest dominated by slash pine, laurel oak, paradise tree, sweet bay, cabbage palmetto, and Ilex; on water's edge",0.9
+Quiet Waters,QW-12,5/21/2025,21,May,2025,13:20:00,13:34:00,26.31507,-80.1616,Marina/Nina,93,4,Open Grassy,Sunny,,0
+Markham,MK-16,6/5/2025,5,June,2025,8:42:00,8:52:00,26.1276,-80.3551,Marina/Nina,80,8,Open Grassy,Cloudy,,0
+Markham,MK-17,6/5/2025,5,June,2025,9:21:00,9:32:00,26.1299,-80.3639,Marina/Nina,81,9,Hammock,Cloudy,,0.9
+Markham,MK-18,6/5/2025,5,June,2025,10:01:00,10:21:00,26.1326,-80.3601,Marina/Nina,83,10,Open Grassy,Cloudy,,0
+Markham,MK-19,6/5/2025,5,June,2025,10:37:00,10:48:00,26.13303,-80.3581,Marina/Nina,83,10,Australian Pine Forest,Cloudy,dominated by swamp plants and Australian pine,0.6
+Markham,MK-20,6/5/2025,5,June,2025,11:13:00,12:02:00,26.1315,-80.3456,Marina/Nina,84,9,Open Grassy,Cloudy,,0
+CB Smith,CB-09,6/5/2025,5,June,2025,13:13:00,13:25:00,26.01372,-80.3173,Marina/Nina,87,12,Open Grassy,Cloudy,,0.05
+CB Smith,CB-10,6/5/2025,5,June,2025,13:44:00,14:14:00,26.01592,-80.316,Marina/Nina,87,11,Open Grassy,Cloudy,,0
+CB Smith,CB-11,6/5/2025,5,June,2025,14:24:00,14:34:00,26.01795,-80.3151,Marina/Nina,87,10,Open Grassy,Cloudy,,0
+CB Smith,CB-12,6/5/2025,5,June,2025,14:49:00,15:12:00,26.0088,-80.313,Marina/Nina,87,10,Open Grassy,Cloudy,,0.05
+Highlands Scrub,HS-07,6/9/2025,9,June,2025,9:28:00,9:38:00,26.2834,-80.1097,Marina/Nina,84,8,Sand Pine Scrub,Mostly Sunny,,0
+Highlands Scrub,HS-08,6/9/2025,9,June,2025,10:10:00,10:56:00,26.2817,-80.11,Marina/Nina,84,8,Disturbed Edge,Partly Cloudy,"dense undergrowth, degraded edge",0
+Highlands Scrub,HS-09,6/9/2025,9,June,2025,11:14:00,11:26:00,26.2816,-80.1074,Marina/Nina,86,9,Sand Pine Scrub,Mostly Sunny,"distubed, dominated by low-lying shrub and gopher apple, Vitis rotundifolia smothering everything",0
+Military Trail,MT-07,6/9/2025,9,June,2025,12:45:00,12:57:00,26.28689,-80.1355,Marina/Nina,89,10,Oak Dominated Scrub,Mostly Sunny,,0
+Military Trail,MT-08,6/9/2025,9,June,2025,13:06:00,13:27:00,26.28606,-80.1347,Marina/Nina,90,11,Scrubby Flatwoods,Mostly Sunny,"degraded, overgrown with Bidens alba",0
+Military Trail,MT-09,6/9/2025,9,June,2025,13:38:00,13:48:00,26.28619,-80.132,Marina/Nina,90,11,Disturbed Edge,Mostly Sunny,recent burn ,0
+Vista View,VV-09,6/16/2025,16,June,2025,8:39:00,9:10:00,26.0691,-80.3406,Marina/Nina,81,5,Open Grassy,Sunny,"bordering wetland, started raining near end of sampling session",0
+Vista View,VV-10,6/16/2025,16,June,2025,9:40:00,10:10:00,26.07249,-80.3411,Marina/Nina,83,6,Open Grassy,Mostly Sunny,water's edge,0.5
+Vista View,VV-11,6/16/2025,16,June,2025,10:32:00,11:06:00,26.0696,-80.3461,Marina/Nina,81,11,Open Grassy,Mostly Sunny,,0
+Vista View,VV-12,6/16/2025,16,June,2025,11:22:00,11:40:00,26.064,-80.3407,Marina/Nina,82,8,Open Grassy,Mostly Sunny,,0
+Long Key,LK-07,6/16/2025,16,June,2025,12:49:00,13:07:00,26.07219,-80.3218,Marina/Nina,89,11,Disturbed Edge,Mostly Sunny,"disturbed, transitional zone between hammock and disturbed/concrete",0
+Long Key,LK-08,6/16/2025,16,June,2025,13:39:00,13:50:00,26.0733,-80.318,Marina/Nina,90,11,Hammock,Sunny,,0.9
+Long Key,LK-09,6/16/2025,16,June,2025,14:06:00,14:19:00,26.0733,-80.315,Marina/Nina,90,11,Hammock,Sunny,,0.9
+Quiet Waters,QW-13,6/26/2025,26,June,2025,9:12:00,9:26:00,26.30928,-80.1537,Marina/Nina,78,11,Open Grassy,Partly Cloudy,just rained before starting sampling ,0.05
+Quiet Waters,QW-14,6/26/2025,26,June,2025,9:40:00,10:01:00,26.31343,-80.1552,Marina/Nina,80,12,Open Grassy,Partly Cloudy,,0.1
+Quiet Waters,QW-15,6/26/2025,26,June,2025,10:22:00,10:46:00,26.3051,-80.1574,Marina/Nina,81,9,Pine Flatwoods,Partly Cloudy,,0
+Quiet Waters,QW-16,6/26/2025,26,June,2025,11:02:00,11:52:00,26.31751,-80.1668,Marina/Nina,82,10,Open Grassy,Partly Cloudy,,0.1
+Helene Klein,HK-07,6/26/2025,26,June,2025,13:39:00,13:56:000,26.3911,-80.1885,Marina/Nina,84,11,Pine Flatwoods,Cloudy,historically was probably marl prarie but no longer seems to be the case,0.2
+Helene Klein,HK-08,6/26/2025,26,June,2025,14:07:00,14:17:00,26.31888,-80.1874,Marina/Nina,82,10,Pine Flatwoods,Mostly Cloudy,,0.9
+Helene Klein,HK-09,6/26/2025,26,June,2025,14:36:00,14:46:00,26.3179,-80.1882,Marina/Nina,85,13,Pine Flatwoods,Cloudy,,0.2
+Vista View,VV-13,7/1/2025,1,July,2025,8:32:00,9:04:00,26.07328,-80.3388,Marina/Nina,80,4,Open Grassy,Cloudy,,0
+Vista View,VV-14,7/1/2025,1,July,2025,9:37:00,9:58:00,26.0692,-80.3422,Marina/Nina,83,7,Open Grassy,Mostly Sunny,,0
+Vista View,VV-15,7/1/2025,1,July,2025,10:18:00,10:41:00,26.0641,-80.349,Marina/Nina,85,5,Open Grassy,Partly Cloudy,,0
+Vista View,VV-16,7/1/2025,1,July,2025,10:55:00,11:18:00,26.06388,-80.345,Marina/Nina,87,9,Open Grassy,Mostly Cloudy,,0
+CB Smith,CB-13,7/2/2025,2,July,2025,8:36:00,8:47:00,26.01697,-80.3149,Marina/Nina,81,4,Open Grassy,Rain,drizzling ,0.1
+CB Smith,CB-14,7/2/2025,2,July,2025,9:10:00,9:32:00,26.0099,-80.3128,Marina/Nina,82,4,Open Grassy,Cloudy,,0
+CB Smith,CB-15,7/2/2025,2,July,2025,9:52:00,10:00:00,26.0119,-80.318,Marina/Nina,82,10,Open Grassy,Cloudy,water's edge,0
+CB Smith,CB-16,7/2/2025,2,July,2025,10:20:00,10:31:00,26.0145,-80.3195,Marina/Nina,80,11,Open Grassy,Cloudy,,0
+Quiet Waters,QW-17,7/7/2025,7,July,2025,9:00:00,10:12:00,26.31507,-80.1616,Marina/Nina,82,2,Open Grassy,Sunny,,0.05
+Quiet Waters,QW-18,7/7/2025,7,July,2025,10:30:00,10:40:00,26.3118,-80.1595,Marina/Nina,85,4,Pine Flatwoods,Sunny,near water's edge,0.9
+Quiet Waters,QW-19,7/7/2025,7,July,2025,10:51:00,11:34:00,26.31321,-80.1579,Marina/Nina,86,4,Open Grassy,Sunny,,0
+Quiet Waters,QW-20,7/7/2025,7,July,2025,11:52:00,13:20:00,26.31282,-80.1593,Marina/Nina,87,5,Open Grassy,Cloudy,paused due to rain from 12:09 to 12:53,0
+Military Trail,MT-10,7/7/2025,7,July,2025,13:58:00,14:12:00,26.28713,-80.135,Marina/Nina,90,8,Oak Dominated Scrub,Mostly Cloudy,,0
+Military Trail,MT-11,7/7/2025,7,July,2025,14:32:00,14:57:00,26.28626,-80.1321,Marina/Nina,90,8,Disturbed Edge,Mostly Cloudy,,0
+Military Trail,MT-12,7/7/2025,7,July,2025,15:03:00,15:14:00,26.28691,-80.1326,Marina/Nina,90,8,Sand Pine Scrub,Mostly Cloudy,,0.6
+Helene Klein,HK-10,7/8/2025,8,July,2025,8:36:00,8:46:00,26.31793,-80.1882,Marina/Nina,80,3,Pine Flatwoods,Cloudy,,0.6
+Helene Klein,HK-11,7/8/2025,8,July,2025,9:14:00,9:27:00,26.31838,-80.1876,Marina/Nina,84,3,Pine Flatwoods,Cloudy,supposed to be pine flatwoods but it's really become hammock ,0.8
+Helene Klein,HK-12,7/8/2025,8,July,2025,9:36:00,9:46:00,26.31831,-80.1873,Marina/Nina,84,3,Pine Flatwoods,Cloudy,supposed to be pine flatwoods but it's really become hammock ,0.9
+Highlands Scrub,HS-10,7/8/2025,8,July,2025,11:08:00,11:44:00,26.2803,-80.1093,Marina/Nina,88,6,Sand Pine Scrub,Partly Cloudy,,0
+Highlands Scrub,HS-11,7/8/2025,8,July,2025,12:02:00,12:32:00,26.28186,-80.11,Marina/Nina,89,8,Sand Pine Scrub,Mostly Sunny ,,0
+Highlands Scrub,HS-12,7/8/2025,8,July,2025,12:43:00,12:58:00,26.2821,-80.1107,Marina/Nina,89,8,Sand Pine Scrub,Mostly Sunny,,0
+Markham,MK-21,7/28/2025,28,July,2025,8:45:00,8:55:00,26.1359,-80.3554,Marina/Nina/Levi/Sebastian/Analise/Mario,82,3,Australian Pine Forest,Sunny,,0.95
+Markham,MK-22,7/28/2025,28,July,2025,9:11:00,9:31:00,26.1285,-80.3545,Marina/Nina/Levi/Sebastian/Analise/Mario,84,3,Open Grassy,Partly Cloudy,,0
+Markham,MK-23,7/28/2025,28,July,2025,9:58:00,10:37:00,26.1269,-80.3512,Marina/Nina/Levi/Sebastian/Analise/Mario,85,3,Open Grassy,Cloudy,water's edge,0
+Markham,MK-24,7/28/2025,28,July,2025,10:58:00,11:08:00,26.1284,-80.3474,Marina/Nina/Levi/Sebastian/Analise/Mario,88,3,Open Grassy,Cloudy,,0
+Markham,MK-25,7/28/2025,28,July,2025,11:46:00,11:56:00,26.1373,-80.3451,Marina/Nina/Levi/Sebastian/Analise/Mario,90,4,Hammock,Cloudy,,0.95
+Long Key,LK-10,7/28/2025,28,July,2025,13:27:00,13:37:00,26.07387,-80.325,Marina/Nina/Analise/Levi/Mario,92,9,Hammock,Mostly Cloudy,,0.95
+Long Key,LK-11,7/28/2025,28,July,2025,14:02:00,14:12:00,26.07387,-80.3225,Marina/Nina/Analise/Levi/Mario,93,9,Hammock,Mostly Cloudy,near water's edge,0.7
+Long Key,LK-12,7/28/2025,28,July,2025,14:47:00,14:57:00,26.0787,-80.3274,Marina/Nina/Analise/Levi/Mario,93,10,Wetland,Mostly Cloudy,,0.6
+Quiet Waters,QW-21,8/13/2025,13,August,2025,9:06:00,10:04:00,26.3142,-80.1556,Marina,83,4,Open Grassy,Sunny,,0
+Quiet Waters,QW-22,8/13/2025,13,August,2025,10:19:00,11:48:00,26.31687,-80.1645,Marina,86,5,Open Grassy,Partly Cloudy,,0
+Quiet Waters,QW-23,8/13/2025,13,August,2025,12:10:00,12:20:00,26.3068,-80.1563,Marina,90,7,Pine Flatwoods,Mostly Cloudy,near water's edge,0.95
+Quiet Waters,QW-24,8/13/2025,13,August,2025,12:31:00,12:41:00,26.3076,-80.1556,Marina,90,7,Open Grassy,Mostly Cloudy,,0.05
+Military Trail,MT-13,8/13/2025,13,August,2025,13:27:00,13:45:00,26.28656,-80.1345,Marina,91,8,Scrubby Flatwoods,Mostly Cloudy,"looks to have been burned in the past few months, flowers are re-blooming after the burn",0
+Military Trail,MT-14,8/13/2025,13,August,2025,13:57:00,14:07:00,26.28645,-80.1327,Marina,91,8,Sand Pine Scrub,Partly Cloudy,pine dominated scrub,0.8
+Military Trail,MT-15,8/13/2025,13,August,2025,14:16:00,14:26:00,26.28729,-80.1331,Marina,91,8,Sand Pine Scrub,Mostly Cloudy,,0.05
+Highlands Scrub,HS-13,8/14/2025,14,August,2025,9:04:00,9:16:00,26.28127,-80.1088,Marina/Nina,83,2,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-14,8/14/2025,14,August,2025,9:33:00,9:45:00,26.2834,-80.1108,Marina/Nina,85,1,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-15,8/14/2025,14,August,2025,9:59:00,10:10:00,26.28389,-80.1107,Marina/Nina,86,2,Sand Pine Scrub,Sunny,,0
+Helene Klein,HK-13,8/14/2025,14,August,2025,11:43:00,11:56:00,26.31817,-80.1891,Marina/Nina,90,4,Pine Flatwoods,Sunny,,0
+Helene Klein,HK-14,8/14/2025,14,August,2025,12:09:00,12:54:00,26.31881,-80.1882,Marina/Nina,90,5,Pine Flatwoods,Sunny,,0
+Helene Klein,HK-15,8/14/2025,14,August,2025,13:17:00,13:17:00,26.31803,-80.1876,Marina/Nina,91,8,Pine Flatwoods,Mostly Sunny,,0.6
+CB Smith,CB-17,8/15/2025,15,August,2025,9:14:00,10:25:00,26.01883,-80.315,Marina/Nina,84,4,Open Grassy,Sunny,,0
+CB Smith,CB-18,8/15/2025,15,August,2025,10:43:00,10:54:00,26.01257,-80.3154,Marina/Nina,89,4,Open Grassy,Sunny,,0
+CB Smith,CB-19,8/15/2025,15,August,2025,11:08:00,11:36:00,26.00929,-80.3167,Marina/Nina,89,4,Open Grassy,Sunny,,0.4
+CB Smith,CB-20,8/15/2025,15,August,2025,11:48:00,12:18:00,26.01059,-80.3192,Marina/Nina,90,7,Open Grassy,Mostly Sunny,,0.05
+Markham,MK-26,8/15/2025,15,August,2025,13:54:00,14:28:00,26.13549,-80.3559,Marina/Nina,93,9,Open Grassy,Mostly Cloudy,,0.05
+Markham,MK-27,8/15/2025,15,August,2025,14:55:00,14:55:00,26.12949,-80.3626,Marina/Nina,93,9,Hammock,Cloudy,,0.8
+Markham,MK-28,8/15/2025,15,August,2025,15:12:00,15:22:00,26.12623,-80.3564,Marina/Nina,93,9,Open Grassy,Partly Cloudy,,0
+Markham,MK-29,8/15/2025,15,August,2025,15:38:00,15:54:00,26.12994,-80.3517,Marina/Nina,93,9,Open Grassy,Mostly Sunny,,0.05
+Markham,MK-30,8/15/2025,15,August,2025,16:06:00,16:11:00,26.13439,-80.345,Marina/Nina,92,9,Hammock,Mostly Sunny,,0.95
+Vista View,VV-17,8/18/2025,18,August,2025,9:05:00,9:08:00,26.06806,-80.3395,Marina,83,2,Open Grassy,Sunny,,0
+Vista View,VV-18,8/18/2025,18,August,2025,9:28:00,11:15:00,26.07057,-80.3436,Marina,84,2,Open Grassy,Sunny,,0
+Vista View,VV-19,8/18/2025,18,August,2025,11:35:00,11:45:00,26.06431,-80.3468,Marina,84,3,Open Grassy,Sunny,,0
+Vista View,VV-20,8/18/2025,18,August,2025,11:57:00,12:07,26.06586,-80.3496,Marina,90,3,Open Grassy,Sunny,,0
+Long Key,LK-13,8/18/2025,18,August,2025,13:16:00,13:26:00,26.07726,-80.3281,Marina,93,3,Hammock,Mostly Sunny,,0.7
+Long Key,LK-14,8/18/2025,18,August,2025,13:43:00,13:53:00,26.07402,-80.3224,Marina,93,5,Hammock,Mostly Sunny,bordering water (a canal),0.6
+Long Key,LK-15,8/18/2025,18,August,2025,14:35:00,15:15:00,26.07416,-80.3197,Marina,93,8,Open Grassy,Partly Cloudy,disturbed area,0
+Markham,MK-31,9/11/2025,11,September,2025,9:19:00,9:30:00,26.12919,-80.3492,Marina/Nina,80,3,Hammock,Partly Cloudy,,0.8
+Markham,MK-32,9/11/2025,11,September,2025,9:49:00,10:01:00,26.12765,-80.3556,Marina/Nina,82,3,Open Grassy,Mostly Sunny,,0.1
+Markham,MK-33,9/11/2025,11,September,2025,10:28:00,10:29:00,26.12415,-80.3462,Marina/Nina,83,4,Australian Pine Forest,Sunny,,0.8
+Markham,MK-34,9/11/2025,11,September,2025,10:43:00,11:41:00,26.1253,-80.3511,Marina/Nina,84,4,Open Grassy,Sunny,,0
+Markham,MK-35,9/11/2025,11,September,2025,12:15:00,12:49:00,26.13834,-80.3521,Marina/Nina,87,5,Open Grassy,Sunny,,0
+CB Smith,CB-21,9/11/2025,11,September,2025,14:04:00,14:18:00,26.01846,-80.3161,Marina/Nina,89,4,Open Grassy,Partly Cloudy,,0.05
+CB Smith,CB-22,9/11/2025,11,September,2025,14:24:00,14:34:00,26.01753,-80.3153,Marina/Nina,88,5,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-23,9/11/2025,11,September,2025,14:49:00,15:00:00,26.01396,-80.3183,Marina/Nina,88,5,Open Grassy,Mostly Cloudy,,0
+CB Smith,CB-24,9/11/2025,11,September,2025,15:17:00,15:30:00,26.01205,-80.3133,Marina/Nina,88,6,Open Grassy,Mostly Cloudy,,0.1
+Helene Klein,HK-16,9/15/2025,15,September,2025,9:06:00,9:31:00,26.31849,-80.1886,Marina,78,3,Pine Flatwoods,Sunny,,0.2
+Helene Klein,HK-17,9/15/2025,15,September,2025,9:47:00,10:18:00,26.31902,-80.1876,Marina,81,3,Pine Flatwoods,Sunny,,0.3
+Helene Klein,HK-18,9/15/2025,15,September,2025,10:26:00,10:36:00,26.3187,-80.1874,Marina,82,3,Pine Flatwoods,Sunny,,0.5
+Military Trail,MT-16,9/15/2025,15,September,2025,11:24:00,12:59:00,26.28584,-80.1348,Marina,84,4,Scrubby Flatwoods,Partly Cloudy,,0
+Military Trail,MT-17,9/15/2025,15,September,2025,13:12:00,13:30:00,26.28693,-80.1345,Marina,86,5,Oak Dominated Scrub,Cloudy,,0
+Military Trail,MT-18,9/15/2025,15,September,2025,13:46:00,14:04:00,26.28703,-80.132,Marina,86,5,Sand Pine Scrub,Cloudy,,0.7
+Long Key,LK-16,9/24/2025,24,September,2025,9:11:00,9:13:00,26.07439,-80.3242,Marina,80,4,Hammock,Mostly Cloudy,,0.9
+Long Key,LK-17,9/24/2025,24,September,2025,9:35:00,10:06:00,26.07206,-80.3213,Marina,82,5,Open Grassy,Mostly Cloudy,disturbed,0
+Long Key,LK-18,9/24/2025,24,September,2025,10:32:00,10:34:00,26.07858,-80.3264,Marina,83,5,Wetland,Cloudy,water's edge,0.9
+Vista View,VV-21,9/24/2025,24,September,2025,11:31:00,12:11:00,26.06404,-80.3458,Marina,85,6,Open Grassy,Cloudy,,0
+Vista View,VV-22,9/24/2025,24,September,2025,12:20:00,13:21:00,26.06463,-80.3441,Marina,85,5,Open Grassy,Cloudy,,0
+Vista View,VV-23,9/24/2025,24,September,2025,13:41:00,14:21:00,26.07367,-80.3412,Marina,86,9,Open Grassy,Cloudy,water's edge,0
+Vista View,VV-24,9/24/2025,24,September,2025,14:45:00,15:05:00,26.07067,-80.3437,Marina,85,8,Open Grassy,Cloudy,,0
+Highlands Scrub,HS-16,9/25/2025,25,September,2025,9:10:00,9:48:00,26.28261,-80.1095,Marina/Levi,82,2,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-17,9/25/2025,25,September,2025,10:10:00,11:06:00,26.28079,-80.109,Marina/Levi,84,3,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-18,9/25/2025,25,September,2025,11:20:00,11:37:00,26.28088,-80.1082,Marina/Levi,86,4,Sand Pine Scrub,Partly Cloudy,,0
+Quiet Waters,QW-25,9/25/2025,25,September,2025,12:50:00,13:07:00,26.31703,-80.1652,Marina,87,4,Open Grassy,Mostly Cloudy,,0
+Quiet Waters,QW-26,9/25/2025,25,September,2025,13:28:00,13:38:00,26.31394,-80.158,Marina,88,5,Open Grassy,Mostly Cloudy,,0
+Quiet Waters,QW-27,9/25/2025,25,September,2025,13:59:00,14:09:00,26.30839,-80.1544,Marina,88,5,Open Grassy,Cloudy,,0
+Quiet Waters,QW-28,9/25/2025,25,September,2025,14:15:00,14:25:00,26.30951,-80.1538,Marina,87,5,Open Grassy,Cloudy,,0
+Vista View,VV-25,10/12/2025,12,October,2025,9:19:00,9:29:00,26.06888,-80.3399,Marina/Levi,72,7,Open Grassy,Mostly Sunny,,0
+Vista View,VV-26,10/12/2025,12,October,2025,9:45:00,9:45:00,26.07112,-80.3409,Marina/Levi,74,6,Open Grassy,Mostly Sunny,,0
+Vista View,VV-27,10/12/2025,12,October,2025,10:03:00,10:19:00,26.06933,-80.3433,Marina/Levi,75,6,Open Grassy,Sunny,,0
+Vista View,VV-28,10/12/2025,12,October,2025,10:30:00,10:43:00,26.06852,-80.3419,Marina/Levi,76,5,Open Grassy,Sunny,,0
+Markham,MK-36,10/12/2025,12,October,2025,11:56:00,11:56:00,26.13064,-80.3624,Marina/Levi,80,5,Hammock,Sunny,in transition from hammock to australian pine forest,0.6
+Markham,MK-37,10/12/2025,12,October,2025,12:20:00,12:20:00,26.12793,-80.3644,Marina/Levi,81,4,Hammock,Mostly Sunny,,0.7
+Markham,MK-38,10/12/2025,12,October,2025,12:38:00,13:04:00,26.13489,-80.3579,Marina/Levi,82,3,Open Grassy,Partly Cloudy,,0.01
+Markham,MK-39,10/12/2025,12,October,2025,13:24:00,13:42:00,26.12908,-80.3532,Marina/Levi,83,3,Open Grassy,Mostly Cloudy,,0
+Markham,MK-40,10/12/2025,12,October,2025,13:51:00,14:10:00,26.13108,-80.3468,Marina/Levi,88,4,Open Grassy,Mostly Cloudy,,0
+CB Smith,CB-25,10/16/2025,16,October,2025,9:22:00,9:32:00,26.01573,-80.3149,Marina,75,5,Open Grassy,Cloudy,,0
+CB Smith,CB-26,10/16/2025,16,October,2025,9:50:00,10:21:00,26.0107,-80.3136,Marina,77,4,Open Grassy,Cloudy ,water's edge,0
+CB Smith,CB-27,10/16/2025,16,October,2025,10:31:00,12:01:00,26.01133,-80.3127,Marina,78,6,Open Grassy,Cloudy,,0
+CB Smith,CB-28,10/16/2025,16,October,2025,12:17:00,12:28:00,26.01399,-80.3185,Marina,83,7,Open Grassy,Cloudy,,0.01
+Long Key,LK-19,10/16/2025,16,October,2025,13:37:00,13:47:00,26.07674,-80.3239,Marina,85,10,Open Grassy,Cloudy,walking path/hiking trail goes through the plot ,0.3
+Long Key,LK-20,10/16/2025,16,October,2025,13:58:00,14:08:00,26.07701,-80.3272,Marina,85,10,Hammock,Cloudy,,0.9
+Long Key,LK-21,10/16/2025,16,October,2025,14:19:00,14:21:00,26.078,-80.3269,Marina,84,10,Hammock,Cloudy,,0.8
+Quiet Waters,QW-29,10/22/2025,22,October,2025,9:32:00,9:42:00,26.3065,-80.1559,Marina,78,8,Pine Flatwoods,Mostly Sunny,,0
+Quiet Waters,QW-30,10/22/2025,22,October,2025,10:00:00,10:10:00,26.31032,-80.1538,Marina,80,7,Open Grassy,Mostly Sunny,,0
+Quiet Waters,QW-31,10/22/2025,22,October,2025,10:19:00,10:29:00,26.31331,-80.1534,Marina,81,6,Open Grassy,Mostly Sunny,water's edge,0.01
+Quiet Waters,QW-32,10/22/2025,22,October,2025,11:06:00,11:50:00,26.317,-80.1673,Marina,81,4,Open Grassy,Mostly Cloudy,water's edge,0
+Helene Klein,HK-19,10/22/2025,22,October,2025,12:43:00,12:43:00,26.31819,-80.1893,Marina,87,7,Pine Flatwoods,Mostly Cloudy,"overgrown, dense understory, lots of Serenoa repens, ferns, and muscadine",0.9
+Helene Klein,HK-20,10/22/2025,22,October,2025,12:59:00,13:12:00,26.31845,-80.1883,Marina,87,8,Pine Flatwoods,Mostly Cloudy,,0.6
+Helene Klein,HK-21,10/22/2025,22,October,2025,13:27:00,13:38:00,26.31896,-80.1879,Marina,87,8,Pine Flatwoods,Mostly Cloudy,,0.4
+Military Trail,MT-19,10/23/2025,23,October,2025,9:24:00,9:24:00,26.28631,-80.1337,Marina/Levi,79,5,Sand Pine Scrub,Sunny,,0.1
+Military Trail,MT-20,10/23/2025,23,October,2025,9:31:00,9:41:00,26.28723,-80.1335,Marina/Levi,80,5,Sand Pine Scrub,Sunny,"slash pines, saw palmettos, cabbage palms, ferns, Smilax, and muscadine ",0.2
+Military Trail,MT-21,10/23/2025,23,October,2025,9:58:00,10:13:00,26.28603,-80.1354,Marina/Levi,81,7,Scrubby Flatwoods,Sunny,degraded; lots of hardwood overgrowth ,0.01
+Highlands Scrub,HS-19,10/23/2025,23,October,2025,10:44:00,11:17:00,26.28167,-80.1103,Marina/Levi,83,8,Sand Pine Scrub,Sunny,,0
+Highlands Scrub,HS-20,10/23/2025,23,October,2025,11:31:00,11:31:00,26.28075,-80.1085,Marina/Levi,84,10,Sand Pine Scrub,Mostly Sunny,,0.7
+Highlands Scrub,HS-21,10/23/2025,23,October,2025,11:49:00,12:04:00,26.2825,-80.1098,Marina/Levi,84,10,Sand Pine Scrub,Mostly Sunny,smilax and oak dominance ,0.3
+Helene Klein,HK-22,11/5/2025,5,November,2025,8:32:00,8:32:00,26.31918,-80.1892,Marina,75,9,Pine Flatwoods,Cloudy,dense oak understory,0.9
+Helene Klein,HK-23,11/5/2025,5,November,2025,8:39:00,8:40:00,26.31934,-80.1873,Marina,76,10,Pine Flatwoods,Cloudy,historically a cypress swamp fragment; now dried out with few cypresses,0.8
+Helene Klein,HK-24,11/5/2025,5,November,2025,9:00:00,9:01:00,26.31814,-80.1868,Marina,77,10,Pine Flatwoods,Cloudy,,0.8
+Military Trail,MT-22,11/5/2025,5,November,2025,10:11:00,10:21:00,26.28623,-80.1351,Marina,79,11,Scrubby Flatwoods,Cloudy,,0
+Military Trail,MT-23,11/5/2025,5,November,2025,10:36:00,10:46:00,26.28596,-80.1335,Marina,80,11,Sand Pine Scrub,Cloudy,,0
+Military Trail,MT-24,11/5/2025,5,November,2025,10:55:00,11:05:00,26.28692,-80.1336,Marina,80,11,Sand Pine Scrub,Cloudy,,0.3
+CB Smith,CB-29,11/13/2025,13,November,2025,9:12:00,9:53:00,26.00961,-80.3142,Marina,67,10,Open Grassy,Mostly Cloudy,,0
+CB Smith,CB-30,11/13/2025,13,November,2025,10:15:00,10:30:00,26.00975,-80.3134,Marina,70,10,Open Grassy,Cloudy,,0
+CB Smith,CB-31,11/13/2025,13,November,2025,10:46:00,10:56:00,26.01449,-80.3192,Marina,71,10,Open Grassy,Cloudy,,0.01
+CB Smith,CB-32,11/13/2025,13,November,2025,11:19:00,12:12:00,26.0185,-80.3157,Marina,73,9,Open Grassy,Partly Cloudy,,0.1
+Vista View,VV-29,11/13/2025,13,November,2025,13:35:00,14:28:00,26.06921,-80.3406,Marina,77,7,Open Grassy,Partly Cloudy,,0
+Vista View,VV-30,11/13/2025,13,November,2025,14:38:00,14:39:00,26.06635,-80.339,Marina,75,7,Open Grassy,Partly Cloudy,,0
+Vista View,VV-31,11/13/2025,13,November,2025,14:59:00,15:13:00,26.07339,-80.3412,Marina,75,7,Open Grassy,Partly Cloudy,near water's edge,0
+Vista View,VV-32,11/13/2025,13,November,2025,15:25:00,15:46:00,26.07428,-80.3388,Marina,75,7,Open Grassy,Mostly Cloudy,near water's edge,0
+Markham,MK-41,11/19/2025,19,November,2025,8:43:00,8:53:00,26.1306,-80.3576,Marina,73,3,Open Grassy,Sunny,near water's edge,0.05
+Markham,MK-42,11/19/2025,19,November,2025,9:23:00,9:35:00,26.12514,-80.3513,Marina,76,3,Open Grassy,Sunny,,0
+Markham,MK-43,11/19/2025,19,November,2025,9:56:00,10:44:00,26.13245,-80.3458,Marina,78,4,Open Grassy,Sunny,,0.05
+Markham,MK-44,11/19/2025,19,November,2025,10:57:00,10:58:00,26.13549,-80.3456,Marina,79,6,Australian Pine Forest,Mostly Sunny,near water's edge,0.8
+Markham,MK-45,11/19/2025,19,November,2025,11:05:00,11:06:00,26.13776,-80.3453,Marina,82,7,Hammock,Mostly Sunny,,0.95
+Long Key,LK-22,11/19/2025,19,November,2025,12:27:00,12:28:00,26.07148,-80.323,Marina,84,8,Hammock,Mostly Sunny,looks like a creek used to run through here,0.95
+Long Key,LK-23,11/19/2025,19,November,2025,12:50:00,12:52:00,26.07209,-80.32,Marina,84,8,Hammock,Mostly Sunny,,0.5
+Long Key,LK-24,11/19/2025,19,November,2025,13:12:00,13:29:00,26.07439,-80.322,Marina,84,8,Open Grassy,Mostly Sunny,disturbed; tall weedy plants dominate,0
+Quiet Waters,QW-33,11/24/2025,24,November,2025,8:46:00,9:18:00,26.31547,-80.1616,Marina,74,4,Open Grassy,Sunny,road runs through some of the plot,0
+Quiet Waters,QW-34,11/24/2025,24,November,2025,9:38:00,10:04:00,26.31453,-80.1617,Marina,77,5,Open Grassy,Sunny,,0.7
+Quiet Waters,QW-35,11/24/2025,24,November,2025,10:23:00,10:55:00,26.31455,-80.1538,Marina,79,6,Open Grassy,Mostly Sunny,,0
+Quiet Waters,QW-36,11/24/2025,24,November,2025,11:11:00,11:27:00,26.30933,-80.1565,Marina,81,6,Open Grassy,Partly Cloudy,near water and walking path,0.05
+Highlands Scrub,HS-22,11/24/2025,24,November,2025,12:45:00,13:09:00,26.2809,-80.1091,Marina/Corey,81,9,Sand Pine Scrub,Mostly Cloudy,,0
+Highlands Scrub,HS-23,11/24/2025,24,November,2025,13:23:00,13:35:00,26.28358,-80.1098,Marina/Corey,81,8,Sand Pine Scrub,Mostly Cloudy,most of the plot is a firebreak path in overgrowth area ,0.5
+Highlands Scrub,HS-24,11/24/2025,24,November,2025,13:43:00,13:56:00,26.28422,-80.1092,Marina/Corey,81,8,Disturbed Edge,Cloudy,transition from sand pine scrub to walking path area; borders edge of park that transitions to urban area,0
+Markham,MK-46,12/3/2025,3,December,2025,8:53:00,9:07:00,26.12929,-80.3609,Marina,73,6,Open Grassy,Partly Cloudy,near water's edge and next to a dog park,0
+Markham,MK-47,12/3/2025,3,December,2025,9:17:00,9:53:00,26.12891,-80.3601,Marina,74,6,Open Grassy,Mostly Sunny,,0
+Markham,MK-48,12/3/2025,3,December,2025,10:20:00,10:30:00,26.12881,-80.3513,Marina,76,6,Open Grassy,Mostly Sunny,"all vegetation is crunchy/dry, only a few intact flowers; near water's edge",0.1
+Markham,MK-49,12/3/2025,3,December,2025,10:42:00,10:42:00,26.13183,-80.3458,Marina,77,6,Hammock,Partly Cloudy,,0.95
+Markham,MK-50,12/3/2025,3,December,2025,11:02:00,11:02:00,26.13822,-80.3527,Marina,77,6,Hammock,Partly Cloudy,,0.96
+CB Smith,CB-33,12/3/2025,3,December,2025,12:00:00,12:38:00,26.01419,-80.3136,Marina,79,5,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-34,12/3/2025,3,December,2025,12:51:00,13:15:00,26.0172,-80.3162,Marina,80,4,Open Grassy,Partly Cloudy,crunchy grass,0.05
+CB Smith,CB-35,12/3/2025,3,December,2025,13:25:00,13:52:00,26.0181,-80.315,Marina,81,3,Open Grassy,Partly Cloudy,,0
+CB Smith,CB-36,12/3/2025,3,December,2025,14:10:00,14:20:00,26.0098,-80.31997,Marina,82,4,Open Grassy,Partly Cloudy,,0
+Vista View,VV-33,12/3/2025,3,December,2025,14:47:00,15:01:00,26.06852,-80.3394,Marina,81,4,Open Grassy,Mostly Sunny,,0
+Vista View,VV-34,12/3/2025,3,December,2025,15:09:00,15:19:00,26.06707,-80.3413,Marina,81,4,Open Grassy,Mostly Sunny,,0
+Vista View,VV-35,12/3/2025,3,December,2025,15:33:00,15:43:00,26.0645,-80.3499,Marina,82,4,Open Grassy,Sunny,looks freshly mowed,0
+Vista View,VV-36,12/3/2025,3,December,2025,15:53:00,16:07:00,26.06563,-80.348,Marina,81,4,Open Grassy,Sunny,,0.05
+Military Trail,MT-25,12/4/2025,4,December,2025,8:53:00,9:03:00,26.28686,-80.1344,Marina,72,4,Oak Dominated Scrub,Mostly Sunny,recent prescribed burn,0
+Military Trail,MT-26,12/4/2025,4,December,2025,9:17:00,9:27:00,26.28625,-80.1336,Marina,73,4,Sand Pine Scrub,Mostly Sunny,,0
+Military Trail,MT-27,12/4/2025,4,December,2025,9:41:00,10:01:00,26.28748,-80.1337,Marina,75,4,Disturbed Edge,Mostly Sunny,transition from sand pine scrub to housing ,0.6
+Helene Klein,HK-25,12/4/2025,4,December,2025,10:43:00,11:00:00,26.31846,-80.1878,Marina,78,4,Pine Flatwoods,Mostly Cloudy,bordered by paved (cement) walking path,0.6
+Helene Klein,HK-26,12/4/2025,4,December,2025,11:12:00,11:22:00,26.31834,-80.1881,Marina,79,5,Pine Flatwoods,Mostly Cloudy,bordered by paved (cement) walking path,0.4
+Helene Klein,HK-27,12/4/2025,4,December,2025,11:36:00,11:46:00,26.31878,-80.1879,Marina,80,6,Pine Flatwoods,Mostly Sunny,,0.4
+Quiet Waters,QW-37,12/4/2025,4,December,2025,12:32:00,12:52:00,26.3076,-80.1554,Marina,81,7,Open Grassy,Mostly Cloudy,,0
+Quiet Waters,QW-38,12/4/2025,4,December,2025,13:15:00,13:47:00,26.31312,-80.1608,Marina,81,7,Open Grassy,Cloudy,,0.3
+Quiet Waters,QW-39,12/4/2025,4,December,2025,14:05:00,14:21:00,26.31727,-80.167,Marina,81,7,Open Grassy,Cloudy,,0.05
+Quiet Waters,QW-40,12/4/2025,4,December,2025,15:34:00,15:56:00,26.31465,-80.1603,Marina,80,6,Open Grassy,Cloudy,,0
+Long Key,LK-25,12/28/2025,28,December,2025,9:48:00,9:48:00,26.07353,-80.3261,Marina/Luis,70,4,Hammock,Sunny,,0.3
+Long Key,LK-26,12/28/2025,28,December,2025,10:19:00,10:40:00,26.07219,-80.3182,Marina/Luis,73,3,Open Grassy,Sunny,,0
+Long Key,LK-27,12/28/2025,28,December,2025,10:53:00,10:53:00,26.07212,-80.319,Marina/Luis,75,3,Hammock,Sunny,,0.9
+Highlands Scrub,HS-25,12/28/2025,28,December,2025,12:21:00,12:21:00,26.28315,-80.1098,Marina/Luis,78,3,Sand Pine Scrub,Sunny,,0.5
+Highlands Scrub,HS-26,12/28/2025,28,December,2025,12:40:00,13:03:00,26.28427,-80.1092,Marina/Luis,78,3,Disturbed Edge,Mostly Sunny,transition from sand pine scrub to walking path area; borders edge of park that transitions to urban area,0
+Highlands Scrub,HS-27,12/28/2025,28,December,2025,13:13:00,13:23:00,26.2847,-80.1105,Marina/Luis,79,4,Sand Pine Scrub,Mostly Sunny,bordering (near) walking path ,0.05
+Vista View,VV-37,1/19/2026,19,January,2026,9:09:00,9:19:00,26.06581,-80.3501,Marina,50,11,Open Grassy,Mostly Sunny,,0
+Vista View,VV-38,1/19/2026,19,January,2026,10:03:00,10:13:00,26.06998,-80.3425,Marina,53,11,Open Grassy,Mostly Sunny,,0
+Vista View,VV-39,1/19/2026,19,January,2026,10:32:00,10:42:00,26.0671,-80.339,Marina,55,12,Open Grassy,Mostly Sunny,concrete walking path cutting through corner of plot,0.5
+Vista View,VV-40,1/19/2026,19,January,2026,10:51:00,11:01:00,26.06444,-80.3387,Marina,56,11,Open Grassy,Mostly Sunny,,0
+Markham,MK-51,1/19/2026,19,January,2026,12:14:00,12:36:00,26.12542,-80.3538,Marina,62,9,Open Grassy,Mostly Sunny,,0
+Markham,MK-52,1/19/2026,19,January,2026,12:47:00,12:57:00,26.12575,-80.3512,Marina,64,9,Open Grassy,Partly Cloudy,,0
+Markham,MK-53,1/19/2026,19,January,2026,13:15:00,13:25:00,26.13637,-80.3458,Marina,65,9,Australian Pine Forest,Mostly Sunny,near water's edge,0.8
+Markham,MK-54,1/19/2026,19,January,2026,13:32:00,13:32:00,26.1377,-80.3444,Marina,66,9,Hammock,Partly Cloudy,,0.95
+Markham,MK-55,1/19/2026,19,January,2026,13:55:00,14:05:00,26.13444,-80.3595,Marina,66,9,Open Grassy,Partly Cloudy,near water's edge and a campground,0
+CB Smith,CB-37,1/19/2026,19,January,2026,14:38:00,14:55:00,26.0148,-80.315,Marina,68,9,Open Grassy,Mostly Cloudy,,0.05
+CB Smith,CB-38,1/19/2026,19,January,2026,15:05:00,15:15:00,26.01857,-80.3157,Marina,69,8,Open Grassy,Cloudy,near water's edge,0.4
+CB Smith,CB-39,1/19/2026,19,January,2026,15:20:00,15:38:00,26.01864,-80.3153,Marina,69,8,Open Grassy,Mostly Cloudy,near water's edge,0
+CB Smith,CB-40,1/19/2026,19,January,2026,15:51:00,16:01:00,26.00896,-80.3157,Marina,68,8,Open Grassy,Cloudy,near a lake,0
+Quiet Waters,QW-41,1/21/2026,21,January,2026,9:09:00,9:19:00,26.31457,-80.1541,Marina,69,18,Open Grassy,Cloudy,,0
+Quiet Waters,QW-42,1/21/2026,21,January,2026,9:30:00,9:40:00,26.31272,-80.1584,Marina,70,18,Open Grassy,Cloudy,,0.1
+Quiet Waters,QW-43,1/21/2026,21,January,2026,10:01:00,10:38:00,26.30739,-80.1561,Marina,70,18,Open Grassy,Cloudy,,0
+Quiet Waters,QW-44,1/21/2026,21,January,2026,10:45:00,10:55:00,26.30684,-80.155,Marina,71,16,Pine Flatwoods,Cloudy,,0.7
+Helene Klein,HK-28,1/21/2026,21,January,2026,11:52:00,11:52:00,26.31812,-80.1889,Marina,72,14,Pine Flatwoods,Cloudy,,0.4
+Helene Klein,HK-29,1/21/2026,21,January,2026,12:05:00,12:15:00,26.31843,-80.1881,Marina,72,14,Pine Flatwoods,Cloudy,,0.4
+Helene Klein,HK-30,1/21/2026,21,January,2026,12:23:00,12:23:00,26.31926,-80.1892,Marina,72,14,Pine Flatwoods,Cloudy,,0.6
+Military Trail,MT-28,1/21/2026,21,January,2026,13:00:00,13:29:00,26.28615,-80.1357,Marina,72,13,Scrubby Flatwoods,Cloudy,near a walking path,0
+Military Trail,MT-29,1/21/2026,21,January,2026,13:43:00,13:43:00,26.28604,-80.1326,Marina,72,13,Sand Pine Scrub,Cloudy,,0.95
+Military Trail,MT-30,1/21/2026,21,January,2026,13:59:00,14:09:00,26.28668,-80.1343,Marina,72,13,Oak Dominated Scrub,Cloudy,near a walking path,0.2
+Highlands Scrub,HS-28,1/27/2026,27,January,2026,9:05:00,9:15:00,26.28289,-80.109,Marina/Mario,53,13,Sand Pine Scrub,Sunny,bordering (near) walking path ,0
+Highlands Scrub,HS-29,1/27/2026,27,January,2026,9:37:00,9:47:00,26.28356,-80.1094,Marina/Mario,56,14,Sand Pine Scrub,Sunny,,0.7
+Highlands Scrub,HS-30,1/27/2026,27,January,2026,10:08:00,10:25:00,26.28115,-80.1116,Marina/Mario,58,14,Sand Pine Scrub,Mostly Sunny,,0
+Long Key,LK-28,1/27/2026,27,January,2026,11:54:00,12:04:00,26.07175,-80.3214,Marina,62,15,Disturbed Edge,Sunny,disturbed fragment transitioning to hammock,0.2
+Long Key,LK-29,1/27/2026,27,January,2026,12:19:00,12:19:00,26.07437,-80.3213,Marina,64,15,Hammock,Sunny,,0.7
+Long Key,LK-30,1/27/2026,27,January,2026,12:56:00,12:56:00,26.07833,-80.3257,Marina,65,14,Wetland,Sunny,,0.75
+CB Smith,CB-41,2/11/2026,11,February,2026,8:59:00,9:09:00,26.01369,-80.315,Marina,65,2,Open Grassy,Sunny,,0
+CB Smith,CB-42,2/11/2026,11,February,2026,9:26:00,9:40:00,26.01054,-80.3153,Marina,69,2,Open Grassy,Sunny,near water's edge,0.05
+CB Smith,CB-43,2/11/2026,11,February,2026,9:55:00,10:05:00,26.00967,-80.3181,Marina,72,2,Open Grassy,Sunny,"brown, dy, and crunchy; used to be a field full of flowers but they all died during a freeze the week prior",0
+CB Smith,CB-44,2/11/2026,11,February,2026,10:24:00,10:34:00,26.01384,-80.3199,Marina,73,3,Open Grassy,Sunny,,0.05
+Markham,MK-56,2/11/2026,11,February,2026,11:24:00,11:24:00,26.1331,-80.358,Marina,75,3,Australian Pine Forest,Mostly Cloudy,,0.6
+Markham,MK-57,2/11/2026,11,February,2026,11:42:00,11:42:00,26.12812,-80.3537,Marina,75,3,Open Grassy,Mostly Cloudy,,0
+Markham,MK-58,2/11/2026,11,February,2026,11:51:00,12:10:00,26.12748,-80.3555,Marina,76,3,Open Grassy,Mostly Cloudy,near water's edge,0
+Markham,MK-59,2/11/2026,11,February,2026,12:30:00,12:30:00,26.13188,-80.3451,Marina,77,4,Hammock,Mostly Cloudy,,0.8
+Markham,MK-60,2/11/2026,11,February,2026,12:51:00,13:01:00,26.12656,-80.3569,Marina,78,4,Open Grassy,Cloudy,shaded by one big live oal,0.6
+Vista View,VV-41,2/11/2026,11,February,2026,13:41:00,13:51:00,26.06392,-80.3392,Marina,79,3,Open Grassy,Mostly Cloudy,,0
+Vista View,VV-42,2/11/2026,11,February,2026,14:00:00,14:10:00,26.0659,-80.3421,Marina,79,3,Open Grassy,Cloudy,,0
+Vista View,VV-43,2/11/2026,11,February,2026,14:19:00,14:46:00,26.06581,-80.3479,Marina,79,2,Open Grassy,Cloudy,,0.05
+Vista View,VV-44,2/11/2026,11,February,2026,15:07:00,15:25:00,26.06947,-80.3419,Marina,79,2,Open Grassy,Cloudy,,0
+Quiet Waters,QW-45,2/19/2026,19,February,2026,9:06:00,9:16:00,26.30894,-80.1588,Marina/Mario,75,5,Open Grassy,Mostly Sunny,near water's edge,0.05
+Quiet Waters,QW-46,2/19/2026,19,February,2026,9:46:00,10:32:00,26.31224,-80.1541,Marina/Mario,78,6,Open Grassy,Mostly Sunny,,0
+Quiet Waters,QW-47,2/19/2026,19,February,2026,10:44:00,10:55:00,26.312,-80.1606,Marina/Mario,80,6,Open Grassy,Mostly Sunny,,0
+Quiet Waters,QW-48,2/19/2026,19,February,2026,11:07:00,11:26:00,26.312,-80.157,Marina/Mario,80,6,Pine Flatwoods,Partly Cloudy,,0
+Highlands Scrub,HS-31,2/19/2026,19,February,2026,12:48:00,12:58:00,26.28123,-80.1094,Marina/Mario,81,8,Sand Pine Scrub,Mostly Cloudy,,0
+Highlands Scrub,HS-32,2/19/2026,19,February,2026,13:17:00,13:27:00,26.2813,-80.1079,Marina/Mario,81,9,Sand Pine Scrub,Mostly Cloudy,,0.05
+Highlands Scrub,HS-33,2/19/2026,19,February,2026,13:52:00,13:52:00,26.28493,-80.1102,Marina/Mario,81,10,Sand Pine Scrub,Cloudy,,0
+Military Trail,MT-31,2/19/2026,19,February,2026,14:25:00,14:35:00,26.28717,-80.1351,Marina/Mario,81,10,Oak Dominated Scrub,Cloudy,,0.2
+Military Trail,MT-32,2/19/2026,19,February,2026,14:52:00,14:52:00,26.28664,-80.1334,Marina/Mario,81,10,Sand Pine Scrub,Mostly Cloudy,,0.9
+Military Trail,MT-33,2/19/2026,19,February,2026,14:59:00,15:09:00,26.28599,-80.1349,Marina/Mario,80,10,Scrubby Flatwoods,Mostly Cloudy,,0
+Helene Klein,HK-31,2/20/2026,20,February,2026,9:08:00,9:08:00,26.31816,-80.189,Marina,76,5,Pine Flatwoods,Sunny,,0.5
+Helene Klein,HK-32,2/20/2026,20,February,2026,9:25:00,9:25:00,26.3191,-80.1886,Marina,77,5,Pine Flatwoods,Sunny,,0.8
+Helene Klein,HK-33,2/20/2026,20,February,2026,9:47:00,9:57:00,26.31787,-80.1872,Marina,78,5,Pine Flatwoods,Sunny,,0.6
+Long Key,LK-31,2/20/2026,20,February,2026,11:34:00,11:34:00,26.07383,-80.3225,Marina,82,6,Hammock,Mostly Sunny,near water's edge,0.6
+Long Key,LK-32,2/20/2026,20,February,2026,11:55:00,11:55:00,26.07209,-80.321,Marina,83,6,Open Grassy,Mostly Cloudy,,0
+Long Key,LK-33,2/20/2026,20,February,2026,12:29:00,12:29:00,26.07763,-80.3248,Marina,83,5,Wetland,Cloudy,near water's edge,0.4
+Quiet Waters,QW-49,3/10/2026,10,March,2026,9:35:00,10:00:00,26.31242,-80.1556,Marina/Levi,78,6,Open Grassy,Sunny,,0
+Quiet Waters,QW-50,3/10/2026,10,March,2026,10:10:00,10:27:00,26.31077,-80.1539,Marina/Levi,79,6,Open Grassy,Sunny,,0
+Quiet Waters,QW-51,3/10/2026,10,March,2026,10:39:00,10:39:00,26.31181,-80.1582,Marina/Levi,80,7,Ephemeral Wetland,Mostly Sunny,,0.9
+Quiet Waters,QW-52,3/10/2026,10,March,2026,10:50:00,11:00:00,26.31435,-80.1592,Marina/Levi,80,8,Open Grassy,Partly Cloudy,,0
+Military Trail,MT-34,3/10/2026,10,March,2026,11:47:00,12:00:00,26.28621,-80.1356,Marina/Levi,82,9,Scrubby Flatwoods,Partly Cloudy,,0
+Military Trail,MT-35,3/10/2026,10,March,2026,12:06:00,12:29:00,26.28738,-80.1354,Marina/Levi,80,9,Oak Dominated Scrub,Partly Cloudy,,0
+Military Trail,MT-36,3/10/2026,10,March,2026,12:35:00,12:45:00,26.28728,-80.135,Marina/Levi,83,10,Oak Dominated Scrub,Mostly Cloudy,,0
+Highlands Scrub,HS-34,3/10/2026,10,March,2026,13:17:00,13:27:00,26.28487,-80.1097,Marina/Levi,83,10,Disturbed Edge,Mostly Cloudy,,0
+Highlands Scrub,HS-35,3/10/2026,10,March,2026,13:35:00,13:35:00,26.28399,-80.1106,Marina/Levi,84,10,Sand Pine Scrub,Mostly Cloudy,,0.5
+Highlands Scrub,HS-36,3/10/2026,10,March,2026,13:41:00,13:51:00,26.28205,-80.111,Marina/Levi,84,10,Sand Pine Scrub,Partly Cloudy,,0
+Long Key,LK-34,3/11/2026,11,March,2026,9:34:00,9:44:00,26.07167,-80.3191,Marina,80,8,Hammock,Sunny,,0.5
+Long Key,LK-35,3/11/2026,11,March,2026,9:51:00,9:51:00,26.07201,-80.3189,Marina,80,8,Open Grassy,Sunny,recently mowed,0
+Long Key,LK-36,3/11/2026,11,March,2026,10:20:00,10:30:00,26.0768,-80.329,Marina,82,9,Wetland,Sunny,near water's edge,0.4
+CB Smith,CB-45,3/11/2026,11,March,2026,11:27:00,11:37:00,26.00931,-80.3164,Marina,84,10,Open Grassy,Partly Cloudy,,0.3
+CB Smith,CB-46,3/11/2026,11,March,2026,11:45:00,11:45:00,26.00959,-80.318,Marina,85,10,Open Grassy,Cloudy,dry/crunchy vegetation,0
+CB Smith,CB-47,3/11/2026,11,March,2026,11:56:00,12:06:00,26.01355,-80.3188,Marina,85,10,Open Grassy,Cloudy,near water's edge; dry/crunchy vegetation,0
+CB Smith,CB-48,3/11/2026,11,March,2026,12:12:00,12:22:00,26.01412,-80.32,Marina,85,10,Open Grassy,Cloudy,dry/crunchy vegetation,0
+Vista View,VV-45,3/11/2026,11,March,2026,13:00:00,13:17:00,26.06828,-80.3423,Marina,86,10,Open Grassy,Cloudy,,0.1
+Vista View,VV-46,3/11/2026,11,March,2026,13:30:00,13:40:00,26.06465,-80.3436,Marina,87,11,Open Grassy,Partly Cloudy,,0
+Vista View,VV-47,3/11/2026,11,March,2026,13:51:00,13:51:00,26.06471,-80.3484,Marina,87,11,Dry Prairie,Partly Cloudy,,0
+Vista View,VV-48,3/11/2026,11,March,2026,13:56:00,13:56:00,26.06488,-80.3481,Marina,87,11,Dry Prairie,Partly Cloudy,,0
+Markham,MK-61,3/24/2026,24,March,2026,9:19:00,9:19:00,26.12996,-80.3627,Marina,67,4,Hammock,Sunny,,0.9
+Markham,MK-62,3/24/2026,24,March,2026,9:34:00,9:44:00,26.12821,-80.3592,Marina,68,4,Open Grassy,Sunny,,0
+Markham,MK-63,3/24/2026,24,March,2026,10:00:00,10:38:00,26.12554,-80.3538,Marina,71,4,Open Grassy,Sunny,,0
+Markham,MK-64,3/24/2026,24,March,2026,10:51:00,11:10:00,26.1295,-80.3506,Marina,75,3,Open Grassy,Sunny,near water's edge,0
+Markham,MK-65,3/24/2026,24,March,2026,11:21:00,11:21:00,26.13507,-80.3444,Marina,78,2,Hammock,Sunny,,0.9
+Helene Klein,HK-34,3/24/2026,24,March,2026,13:17:00,13:27:00,26.31911,-80.1885,Marina,84,4,Pine Flatwoods,Sunny,,0.4
+Helene Klein,HK-35,3/24/2026,24,March,2026,13:44:00,13:44:00,26.31871,-80.188,Marina,85,4,Pine Flatwoods,Sunny,,0.5
+Helene Klein,HK-36,3/24/2026,24,March,2026,13:58:00,13:58:00,26.31888,-80.1869,Marina,84,6,Pine Flatwoods,Sunny,,0.6
+Markham,MK-66,4/10/2026,10,April,2026,9:02:00,9:12:00,26.12667,-80.3547,Marina,74,11,Open Grassy,Mostly Sunny,near water's edge,0
+Markham,MK-67,4/10/2026,10,April,2026,9:25:00,9:35:00,26.1293,-80.3507,Marina,75,11,Open Grassy,Mostly Sunny,near water's edge,0.3
+Markham,MK-68,4/10/2026,10,April,2026,9:59:00,10:09:00,26.13039,-80.3577,Marina,76,13,Open Grassy,Mostly Cloudy,near water's edge,0
+Markham,MK-69,4/10/2026,10,April,2026,10:32:00,11:08:00,26.13071,-80.3627,Marina,77,13,Hammock,Cloudy,,0.6
+Markham,MK-70,4/10/2026,10,April,2026,11:38:00,11:49:00,26.13802,-80.353,Marina,79,14,Hammock,Cloudy,,0.9
+CB Smith,CB-49,4/10/2026,10,April,2026,12:28:00,12:38:00,26.0115,-80.3196,Marina,80,14,Open Grassy,Cloudy,near water's edge,0.05
+CB Smith,CB-50,4/10/2026,10,April,2026,12:43:00,13:08:00,26.01173,-80.3186,Marina,80,14,Open Grassy,Cloudy,,0
+CB Smith,CB-51,4/10/2026,10,April,2026,13:15:00,13:25:00,26.01268,-80.3194,Marina,80,14,Open Grassy,Cloudy,,0
+CB Smith,CB-52,4/10/2026,10,April,2026,15:20:00,15:34:00,26.00892,-80.3197,Marina,81,14,Open Grassy,Cloudy,,0
+Vista View,VV-49,4/10/2026,10,April,2026,16:13:00,16:30:00,26.06781,-80.3387,Marina,80,14,Open Grassy,Cloudy,,0
+Vista View,VV-50,4/10/2026,10,April,2026,16:44:00,16:56:00,26.06457,-80.3397,Marina,80,14,Open Grassy,Cloudy,,0
+Vista View,VV-51,4/10/2026,10,April,2026,17:15:00,17:25:00,26.06526,-80.3484,Marina,79,14,Open Grassy,Cloudy,,0
+Vista View,VV-52,4/10/2026,10,April,2026,17:33:00,17:56:00,26.06643,-80.3452,Marina,79,13,Open Grassy,Mostly Cloudy,,0
+Military Trail,MT-37,4/12/2026,12,April,2026,8:59:00,9:09:00,26.28665,-80.1327,Marina,72,12,Sand Pine Scrub,Mostly Cloudy,,0.9
+Military Trail,MT-38,4/12/2026,12,April,2026,9:13:00,9:38:00,26.2867,-80.1325,Marina,72,13,Sand Pine Scrub,Mostly Cloudy,,0.5
+Military Trail,MT-39,4/12/2026,12,April,2026,9:47:00,10:36:00,26.28609,-80.1351,Marina,74,13,Scrubby Flatwoods,Mostly Cloudy,,0
+Quiet Waters,QW-53,4/12/2026,12,April,2026,11:05:00,11:22:00,26.30666,-80.155,Marina,76,14,Pine Flatwoods,Mostly Cloudy,,0.1
+Quiet Waters,QW-54,4/12/2026,12,April,2026,11:27:00,11:37:00,26.30783,-80.1544,Marina,77,14,Open Grassy,Cloudy,,0
+Quiet Waters,QW-55,4/12/2026,12,April,2026,11:59:00,12:21:00,26.31381,-80.1542,Marina,78,14,Open Grassy,Mostly Cloudy,,0
+Quiet Waters,QW-56,4/12/2026,12,April,2026,12:48:00,13:02:00,26.31656,-80.1638,Marina,79,14,Open Grassy,Mostly Cloudy,,0.05
+Helene Klein,HK-37,4/12/2026,12,April,2026,13:47:00,14:04:00,26.31792,-80.1886,Marina,80,15,Pine Flatwoods,Partly Cloudy,,0.3
+Helene Klein,HK-38,4/12/2026,12,April,2026,14:17:00,14:27:00,26.31802,-80.1879,Marina,81,15,Pine Flatwoods,Cloudy,,0.6
+Helene Klein,HK-39,4/12/2026,12,April,2026,14:37:00,14:37:00,26.31929,-80.1887,Marina,81,15,Pine Flatwoods,Cloudy,,0.9
+Highlands Scrub,HS-37,4/24/2026,24,April,2026,8:48:00,9:01:00,26.28364,-80.1095,Marina/Mario,73,6,Sand Pine Scrub,Cloudy,,0.3
+Highlands Scrub,HS-38,4/24/2026,24,April,2026,9:26:00,9:36:00,26.28416,-80.1098,Marina/Mario,72,4,Sand Pine Scrub,Cloudy,,0.8
+Highlands Scrub,HS-39,4/24/2026,24,April,2026,10:02:00,10:12:00,26.28335,-80.1108,Marina/Mario,74,6,Sand Pine Scrub,Cloudy,,0.7
+Long Key,LK-37,4/24/2026,24,April,2026,11:31:00,12:35:00,26.074,-80.31516,Marina/Mario,77,7,Open Grassy,Cloudy,,0
+Long Key,LK-38,4/24/2026,24,April,2026,13:05:00,13:41:00,26.07151,-80.3235,Marina/Mario,78,9,Hammock,Cloudy,,0.6
+Long Key,LK-39,4/24/2026,24,April,2026,14:18:00,14:18:00,26.07695,-80.3291,Marina/Mario,79,10,Wetland,Cloudy,,1

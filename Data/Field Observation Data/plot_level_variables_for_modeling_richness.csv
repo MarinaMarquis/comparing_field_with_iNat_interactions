@@ -1,0 +1,349 @@
+"Plot.Identifier","Park.Name","Park.Type","Month","Year","Habitat.Type","Total_Floral_Cover","Habitat.Category","Unique.Interactions"
+"MT-04","Military Trail","Low human modification","May",2025,"Oak Dominated Scrub",0.005,"Scrub",3
+"MT-05","Military Trail","Low human modification","May",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"MT-06","Military Trail","Low human modification","May",2025,"Oak Dominated Scrub",0.0626,"Scrub",4
+"HK-04","Helene Klein","Low human modification","May",2025,"Pine Flatwoods",0.0151,"Flatwoods",2
+"HK-05","Helene Klein","Low human modification","May",2025,"Pine Flatwoods",0.0125,"Flatwoods",1
+"HK-06","Helene Klein","Low human modification","May",2025,"Pine Flatwoods",0.0101,"Flatwoods",0
+"MK-11","Markham","High human modification","May",2025,"Open Grassy",0.005,"Open Human Disturbed",0
+"MK-12","Markham","High human modification","May",2025,"Open Grassy",0.035,"Open Human Disturbed",18
+"MK-13","Markham","High human modification","May",2025,"Australian Pine Forest",0.0076,"Transitional Human Disturbed",0
+"MK-14","Markham","High human modification","May",2025,"Australian Pine Forest",1e-04,"Transitional Human Disturbed",0
+"MK-15","Markham","High human modification","May",2025,"Open Grassy",0.0476,"Open Human Disturbed",2
+"CB-05","CB Smith","High human modification","May",2025,"Open Grassy",0.0275,"Open Human Disturbed",4
+"CB-06","CB Smith","High human modification","May",2025,"Open Grassy",0.07,"Open Human Disturbed",4
+"CB-07","CB Smith","High human modification","May",2025,"Open Grassy",0.03,"Open Human Disturbed",3
+"CB-08","CB Smith","High human modification","May",2025,"Open Grassy",0.0152,"Open Human Disturbed",0
+"LK-04","Long Key","Low human modification","May",2025,"Ephemeral Wetland",0.0403,"Wetland",1
+"LK-05","Long Key","Low human modification","May",2025,"Open Grassy",0.0402,"Open Human Disturbed",19
+"LK-06","Long Key","Low human modification","May",2025,"Hammock",0.0076,"Hammock",0
+"VV-05","Vista View","High human modification","May",2025,"Open Grassy",0.0327,"Open Human Disturbed",11
+"VV-06","Vista View","High human modification","May",2025,"Open Grassy",0.0402,"Open Human Disturbed",10
+"VV-07","Vista View","High human modification","May",2025,"Open Grassy",0.0303,"Open Human Disturbed",1
+"VV-08","Vista View","High human modification","May",2025,"Open Grassy",0.0151,"Open Human Disturbed",0
+"HS-04","Highlands Scrub","Low human modification","May",2025,"Sand Pine Scrub",0.0152,"Scrub",1
+"HS-05","Highlands Scrub","Low human modification","May",2025,"Sand Pine Scrub",0.0051,"Scrub",2
+"HS-06","Highlands Scrub","Low human modification","May",2025,"Sand Pine Scrub",0.0279,"Scrub",4
+"QW-09","Quiet Waters","High human modification","May",2025,"Disturbed Edge",0.01,"Transitional Human Disturbed",7
+"QW-10","Quiet Waters","High human modification","May",2025,"Open Grassy",0.0152,"Open Human Disturbed",0
+"QW-11","Quiet Waters","High human modification","May",2025,"Pine Flatwoods",0.0326,"Flatwoods",0
+"QW-12","Quiet Waters","High human modification","May",2025,"Open Grassy",0,"Open Human Disturbed",0
+"MK-16","Markham","High human modification","June",2025,"Open Grassy",0.0178,"Open Human Disturbed",1
+"MK-17","Markham","High human modification","June",2025,"Hammock",0.0077,"Hammock",0
+"MK-18","Markham","High human modification","June",2025,"Open Grassy",0.0228,"Open Human Disturbed",7
+"MK-19","Markham","High human modification","June",2025,"Australian Pine Forest",0,"Transitional Human Disturbed",0
+"MK-20","Markham","High human modification","June",2025,"Open Grassy",0.0183,"Open Human Disturbed",10
+"CB-09","CB Smith","High human modification","June",2025,"Open Grassy",0.0075,"Open Human Disturbed",0
+"CB-10","CB Smith","High human modification","June",2025,"Open Grassy",0.0328,"Open Human Disturbed",4
+"CB-11","CB Smith","High human modification","June",2025,"Open Grassy",0.0052,"Open Human Disturbed",1
+"CB-12","CB Smith","High human modification","June",2025,"Open Grassy",0.0078,"Open Human Disturbed",8
+"HS-07","Highlands Scrub","Low human modification","June",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"HS-08","Highlands Scrub","Low human modification","June",2025,"Disturbed Edge",0.003,"Transitional Human Disturbed",3
+"HS-09","Highlands Scrub","Low human modification","June",2025,"Sand Pine Scrub",0.0052,"Scrub",2
+"MT-07","Military Trail","Low human modification","June",2025,"Oak Dominated Scrub",4e-04,"Scrub",1
+"MT-08","Military Trail","Low human modification","June",2025,"Scrubby Flatwoods",0.0126,"Scrub",5
+"MT-09","Military Trail","Low human modification","June",2025,"Disturbed Edge",1e-04,"Transitional Human Disturbed",0
+"VV-09","Vista View","High human modification","June",2025,"Open Grassy",0.0205,"Open Human Disturbed",5
+"VV-10","Vista View","High human modification","June",2025,"Open Grassy",0.0052,"Open Human Disturbed",3
+"VV-11","Vista View","High human modification","June",2025,"Open Grassy",0.0179,"Open Human Disturbed",10
+"VV-12","Vista View","High human modification","June",2025,"Open Grassy",0.0053,"Open Human Disturbed",1
+"LK-07","Long Key","Low human modification","June",2025,"Disturbed Edge",8e-04,"Transitional Human Disturbed",1
+"LK-08","Long Key","Low human modification","June",2025,"Hammock",2e-04,"Hammock",0
+"LK-09","Long Key","Low human modification","June",2025,"Hammock",0.0075,"Hammock",0
+"QW-13","Quiet Waters","High human modification","June",2025,"Open Grassy",0.0206,"Open Human Disturbed",0
+"QW-14","Quiet Waters","High human modification","June",2025,"Open Grassy",0.0031,"Open Human Disturbed",0
+"QW-15","Quiet Waters","High human modification","June",2025,"Pine Flatwoods",0.0603,"Flatwoods",3
+"QW-16","Quiet Waters","High human modification","June",2025,"Open Grassy",0.1103,"Open Human Disturbed",23
+"HK-07","Helene Klein","Low human modification","June",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-08","Helene Klein","Low human modification","June",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-09","Helene Klein","Low human modification","June",2025,"Pine Flatwoods",0.01,"Flatwoods",0
+"VV-13","Vista View","High human modification","July",2025,"Open Grassy",0.013,"Open Human Disturbed",3
+"VV-14","Vista View","High human modification","July",2025,"Open Grassy",0.0027,"Open Human Disturbed",1
+"VV-15","Vista View","High human modification","July",2025,"Open Grassy",0.0208,"Open Human Disturbed",6
+"VV-16","Vista View","High human modification","July",2025,"Open Grassy",0.0104,"Open Human Disturbed",0
+"CB-13","CB Smith","High human modification","July",2025,"Open Grassy",0.0156,"Open Human Disturbed",0
+"CB-14","CB Smith","High human modification","July",2025,"Open Grassy",0.0031,"Open Human Disturbed",1
+"CB-15","CB Smith","High human modification","July",2025,"Open Grassy",0.0131,"Open Human Disturbed",1
+"CB-16","CB Smith","High human modification","July",2025,"Open Grassy",0.0127,"Open Human Disturbed",0
+"QW-17","Quiet Waters","High human modification","July",2025,"Open Grassy",0.0156,"Open Human Disturbed",9
+"QW-18","Quiet Waters","High human modification","July",2025,"Pine Flatwoods",2e-04,"Flatwoods",0
+"QW-19","Quiet Waters","High human modification","July",2025,"Open Grassy",0.0104,"Open Human Disturbed",15
+"QW-20","Quiet Waters","High human modification","July",2025,"Open Grassy",0.1056,"Open Human Disturbed",19
+"MT-10","Military Trail","Low human modification","July",2025,"Oak Dominated Scrub",3e-04,"Scrub",0
+"MT-11","Military Trail","Low human modification","July",2025,"Disturbed Edge",0.0028,"Transitional Human Disturbed",3
+"MT-12","Military Trail","Low human modification","July",2025,"Sand Pine Scrub",4e-04,"Scrub",1
+"HK-10","Helene Klein","Low human modification","July",2025,"Pine Flatwoods",3e-04,"Flatwoods",0
+"HK-11","Helene Klein","Low human modification","July",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-12","Helene Klein","Low human modification","July",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HS-10","Highlands Scrub","Low human modification","July",2025,"Sand Pine Scrub",0.0203,"Scrub",5
+"HS-11","Highlands Scrub","Low human modification","July",2025,"Sand Pine Scrub",0.0052,"Scrub",5
+"HS-12","Highlands Scrub","Low human modification","July",2025,"Sand Pine Scrub",0.0078,"Scrub",0
+"MK-21","Markham","High human modification","July",2025,"Australian Pine Forest",0,"Transitional Human Disturbed",0
+"MK-22","Markham","High human modification","July",2025,"Open Grassy",0.015,"Open Human Disturbed",8
+"MK-23","Markham","High human modification","July",2025,"Open Grassy",0.0178,"Open Human Disturbed",13
+"MK-24","Markham","High human modification","July",2025,"Open Grassy",1e-04,"Open Human Disturbed",0
+"MK-25","Markham","High human modification","July",2025,"Hammock",0,"Hammock",0
+"LK-10","Long Key","Low human modification","July",2025,"Hammock",2e-04,"Hammock",0
+"LK-11","Long Key","Low human modification","July",2025,"Hammock",0,"Hammock",0
+"LK-12","Long Key","Low human modification","July",2025,"Wetland",1e-04,"Wetland",0
+"QW-21","Quiet Waters","High human modification","August",2025,"Open Grassy",0.0079,"Open Human Disturbed",9
+"QW-22","Quiet Waters","High human modification","August",2025,"Open Grassy",0.0105,"Open Human Disturbed",18
+"QW-23","Quiet Waters","High human modification","August",2025,"Pine Flatwoods",1e-04,"Flatwoods",0
+"QW-24","Quiet Waters","High human modification","August",2025,"Open Grassy",0.0029,"Open Human Disturbed",0
+"MT-13","Military Trail","Low human modification","August",2025,"Scrubby Flatwoods",0.03,"Scrub",1
+"MT-14","Military Trail","Low human modification","August",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"MT-15","Military Trail","Low human modification","August",2025,"Sand Pine Scrub",2e-04,"Scrub",0
+"HS-13","Highlands Scrub","Low human modification","August",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"HS-14","Highlands Scrub","Low human modification","August",2025,"Sand Pine Scrub",3e-04,"Scrub",0
+"HS-15","Highlands Scrub","Low human modification","August",2025,"Sand Pine Scrub",2e-04,"Scrub",0
+"HK-13","Helene Klein","Low human modification","August",2025,"Pine Flatwoods",2e-04,"Flatwoods",0
+"HK-14","Helene Klein","Low human modification","August",2025,"Pine Flatwoods",0.0027,"Flatwoods",7
+"HK-15","Helene Klein","Low human modification","August",2025,"Pine Flatwoods",0,"Flatwoods",0
+"CB-17","CB Smith","High human modification","August",2025,"Open Grassy",0.0078,"Open Human Disturbed",16
+"CB-18","CB Smith","High human modification","August",2025,"Open Grassy",0.0027,"Open Human Disturbed",0
+"CB-19","CB Smith","High human modification","August",2025,"Open Grassy",0.0153,"Open Human Disturbed",5
+"CB-20","CB Smith","High human modification","August",2025,"Open Grassy",0.0105,"Open Human Disturbed",3
+"MK-26","Markham","High human modification","August",2025,"Open Grassy",0.0103,"Open Human Disturbed",7
+"MK-27","Markham","High human modification","August",2025,"Hammock",0,"Hammock",0
+"MK-28","Markham","High human modification","August",2025,"Open Grassy",0.0027,"Open Human Disturbed",1
+"MK-29","Markham","High human modification","August",2025,"Open Grassy",2e-04,"Open Human Disturbed",0
+"MK-30","Markham","High human modification","August",2025,"Hammock",0,"Hammock",0
+"VV-17","Vista View","High human modification","August",2025,"Open Grassy",0,"Open Human Disturbed",0
+"VV-18","Vista View","High human modification","August",2025,"Open Grassy",0.0828,"Open Human Disturbed",27
+"VV-19","Vista View","High human modification","August",2025,"Open Grassy",6e-04,"Open Human Disturbed",0
+"VV-20","Vista View","High human modification","August",2025,"Open Grassy",3e-04,"Open Human Disturbed",0
+"LK-13","Long Key","Low human modification","August",2025,"Hammock",0.0025,"Hammock",0
+"LK-14","Long Key","Low human modification","August",2025,"Hammock",3e-04,"Hammock",0
+"LK-15","Long Key","Low human modification","August",2025,"Open Grassy",0.0577,"Open Human Disturbed",6
+"MK-31","Markham","High human modification","September",2025,"Hammock",1e-04,"Hammock",0
+"MK-32","Markham","High human modification","September",2025,"Open Grassy",0.0014,"Open Human Disturbed",0
+"MK-33","Markham","High human modification","September",2025,"Australian Pine Forest",0,"Transitional Human Disturbed",0
+"MK-34","Markham","High human modification","September",2025,"Open Grassy",0.0609,"Open Human Disturbed",14
+"MK-35","Markham","High human modification","September",2025,"Open Grassy",3e-04,"Open Human Disturbed",8
+"CB-21","CB Smith","High human modification","September",2025,"Open Grassy",0.0028,"Open Human Disturbed",0
+"CB-22","CB Smith","High human modification","September",2025,"Open Grassy",0.0115,"Open Human Disturbed",3
+"CB-23","CB Smith","High human modification","September",2025,"Open Grassy",0.01,"Open Human Disturbed",1
+"CB-24","CB Smith","High human modification","September",2025,"Open Grassy",5e-04,"Open Human Disturbed",0
+"HK-16","Helene Klein","Low human modification","September",2025,"Pine Flatwoods",0.0027,"Flatwoods",2
+"HK-17","Helene Klein","Low human modification","September",2025,"Pine Flatwoods",0.0125,"Flatwoods",4
+"HK-18","Helene Klein","Low human modification","September",2025,"Pine Flatwoods",1e-04,"Flatwoods",0
+"MT-16","Military Trail","Low human modification","September",2025,"Scrubby Flatwoods",0.0855,"Scrub",16
+"MT-17","Military Trail","Low human modification","September",2025,"Oak Dominated Scrub",0.0025,"Scrub",1
+"MT-18","Military Trail","Low human modification","September",2025,"Sand Pine Scrub",0.0027,"Scrub",3
+"LK-16","Long Key","Low human modification","September",2025,"Hammock",0,"Hammock",0
+"LK-17","Long Key","Low human modification","September",2025,"Open Grassy",0.0429,"Open Human Disturbed",5
+"LK-18","Long Key","Low human modification","September",2025,"Wetland",0,"Wetland",0
+"VV-21","Vista View","High human modification","September",2025,"Open Grassy",7e-04,"Open Human Disturbed",9
+"VV-22","Vista View","High human modification","September",2025,"Open Grassy",0.0351,"Open Human Disturbed",17
+"VV-23","Vista View","High human modification","September",2025,"Open Grassy",0.1002,"Open Human Disturbed",13
+"VV-24","Vista View","High human modification","September",2025,"Open Grassy",8e-04,"Open Human Disturbed",6
+"HS-16","Highlands Scrub","Low human modification","September",2025,"Sand Pine Scrub",0.0052,"Scrub",13
+"HS-17","Highlands Scrub","Low human modification","September",2025,"Sand Pine Scrub",0.0532,"Scrub",34
+"HS-18","Highlands Scrub","Low human modification","September",2025,"Sand Pine Scrub",0.0076,"Scrub",2
+"QW-25","Quiet Waters","High human modification","September",2025,"Open Grassy",4e-04,"Open Human Disturbed",2
+"QW-26","Quiet Waters","High human modification","September",2025,"Open Grassy",2e-04,"Open Human Disturbed",0
+"QW-27","Quiet Waters","High human modification","September",2025,"Open Grassy",4e-04,"Open Human Disturbed",0
+"QW-28","Quiet Waters","High human modification","September",2025,"Open Grassy",1e-04,"Open Human Disturbed",0
+"VV-25","Vista View","High human modification","October",2025,"Open Grassy",0.0105,"Open Human Disturbed",0
+"VV-26","Vista View","High human modification","October",2025,"Open Grassy",0,"Open Human Disturbed",0
+"VV-27","Vista View","High human modification","October",2025,"Open Grassy",0.0107,"Open Human Disturbed",4
+"VV-28","Vista View","High human modification","October",2025,"Open Grassy",0.0129,"Open Human Disturbed",4
+"MK-36","Markham","High human modification","October",2025,"Hammock",0,"Hammock",0
+"MK-37","Markham","High human modification","October",2025,"Hammock",0,"Hammock",0
+"MK-38","Markham","High human modification","October",2025,"Open Grassy",0.013,"Open Human Disturbed",10
+"MK-39","Markham","High human modification","October",2025,"Open Grassy",0.0027,"Open Human Disturbed",7
+"MK-40","Markham","High human modification","October",2025,"Open Grassy",3e-04,"Open Human Disturbed",3
+"CB-25","CB Smith","High human modification","October",2025,"Open Grassy",1e-04,"Open Human Disturbed",0
+"CB-26","CB Smith","High human modification","October",2025,"Open Grassy",0.003,"Open Human Disturbed",2
+"CB-27","CB Smith","High human modification","October",2025,"Open Grassy",0.0182,"Open Human Disturbed",18
+"CB-28","CB Smith","High human modification","October",2025,"Open Grassy",0.0102,"Open Human Disturbed",1
+"LK-19","Long Key","Low human modification","October",2025,"Open Grassy",4e-04,"Open Human Disturbed",0
+"LK-20","Long Key","Low human modification","October",2025,"Hammock",1e-04,"Hammock",0
+"LK-21","Long Key","Low human modification","October",2025,"Hammock",0,"Hammock",0
+"QW-29","Quiet Waters","High human modification","October",2025,"Pine Flatwoods",4e-04,"Flatwoods",0
+"QW-30","Quiet Waters","High human modification","October",2025,"Open Grassy",0.0027,"Open Human Disturbed",0
+"QW-31","Quiet Waters","High human modification","October",2025,"Open Grassy",4e-04,"Open Human Disturbed",0
+"QW-32","Quiet Waters","High human modification","October",2025,"Open Grassy",0.0011,"Open Human Disturbed",9
+"HK-19","Helene Klein","Low human modification","October",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-20","Helene Klein","Low human modification","October",2025,"Pine Flatwoods",1e-04,"Flatwoods",1
+"HK-21","Helene Klein","Low human modification","October",2025,"Pine Flatwoods",2e-04,"Flatwoods",1
+"MT-19","Military Trail","Low human modification","October",2025,"Sand Pine Scrub",0,"Scrub",0
+"MT-20","Military Trail","Low human modification","October",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"MT-21","Military Trail","Low human modification","October",2025,"Scrubby Flatwoods",0.0026,"Scrub",3
+"HS-19","Highlands Scrub","Low human modification","October",2025,"Sand Pine Scrub",0.0053,"Scrub",6
+"HS-20","Highlands Scrub","Low human modification","October",2025,"Sand Pine Scrub",0,"Scrub",0
+"HS-21","Highlands Scrub","Low human modification","October",2025,"Sand Pine Scrub",4e-04,"Scrub",2
+"HK-22","Helene Klein","Low human modification","November",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-23","Helene Klein","Low human modification","November",2025,"Pine Flatwoods",0,"Flatwoods",0
+"HK-24","Helene Klein","Low human modification","November",2025,"Pine Flatwoods",0,"Flatwoods",0
+"MT-22","Military Trail","Low human modification","November",2025,"Scrubby Flatwoods",1e-04,"Scrub",0
+"MT-23","Military Trail","Low human modification","November",2025,"Sand Pine Scrub",4e-04,"Scrub",0
+"MT-24","Military Trail","Low human modification","November",2025,"Sand Pine Scrub",1e-04,"Scrub",0
+"CB-29","CB Smith","High human modification","November",2025,"Open Grassy",0.0054,"Open Human Disturbed",6
+"CB-30","CB Smith","High human modification","November",2025,"Open Grassy",0.0251,"Open Human Disturbed",2
+"CB-31","CB Smith","High human modification","November",2025,"Open Grassy",3e-04,"Open Human Disturbed",0
+"CB-32","CB Smith","High human modification","November",2025,"Open Grassy",0.0152,"Open Human Disturbed",12
+"VV-29","Vista View","High human modification","November",2025,"Open Grassy",0.0229,"Open Human Disturbed",7
+"VV-30","Vista View","High human modification","November",2025,"Open Grassy",0,"Open Human Disturbed",0
+"VV-31","Vista View","High human modification","November",2025,"Open Grassy",0.0027,"Open Human Disturbed",2
+"VV-32","Vista View","High human modification","November",2025,"Open Grassy",0.0054,"Open Human Disturbed",2
+"MK-41","Markham","High human modification","November",2025,"Open Grassy",2e-04,"Open Human Disturbed",0
+"MK-42","Markham","High human modification","November",2025,"Open Grassy",0.0052,"Open Human Disturbed",1
+"MK-43","Markham","High human modification","November",2025,"Open Grassy",0.0201,"Open Human Disturbed",7
+"MK-44","Markham","High human modification","November",2025,"Australian Pine Forest",0,"Transitional Human Disturbed",0
+"MK-45","Markham","High human modification","November",2025,"Hammock",0,"Hammock",0
+"LK-22","Long Key","Low human modification","November",2025,"Hammock",0,"Hammock",0
+"LK-23","Long Key","Low human modification","November",2025,"Hammock",0,"Hammock",0
+"LK-24","Long Key","Low human modification","November",2025,"Open Grassy",0.0525,"Open Human Disturbed",4
+"QW-33","Quiet Waters","High human modification","November",2025,"Open Grassy",0.0076,"Open Human Disturbed",6
+"QW-34","Quiet Waters","High human modification","November",2025,"Open Grassy",0.0275,"Open Human Disturbed",6
+"QW-35","Quiet Waters","High human modification","November",2025,"Open Grassy",0.065,"Open Human Disturbed",6
+"QW-36","Quiet Waters","High human modification","November",2025,"Open Grassy",0.0028,"Open Human Disturbed",1
+"HS-22","Highlands Scrub","Low human modification","November",2025,"Sand Pine Scrub",0.0528,"Scrub",10
+"HS-23","Highlands Scrub","Low human modification","November",2025,"Sand Pine Scrub",3e-04,"Scrub",2
+"HS-24","Highlands Scrub","Low human modification","November",2025,"Disturbed Edge",0.0075,"Transitional Human Disturbed",2
+"MK-46","Markham","High human modification","December",2025,"Open Grassy",0.0052,"Open Human Disturbed",2
+"MK-47","Markham","High human modification","December",2025,"Open Grassy",0.0276,"Open Human Disturbed",8
+"MK-48","Markham","High human modification","December",2025,"Open Grassy",1e-04,"Open Human Disturbed",0
+"MK-49","Markham","High human modification","December",2025,"Hammock",0,"Hammock",0
+"MK-50","Markham","High human modification","December",2025,"Hammock",0,"Hammock",0
+"CB-33","CB Smith","High human modification","December",2025,"Open Grassy",0.0827,"Open Human Disturbed",9
+"CB-34","CB Smith","High human modification","December",2025,"Open Grassy",0.0602,"Open Human Disturbed",5
+"CB-35","CB Smith","High human modification","December",2025,"Open Grassy",0.0601,"Open Human Disturbed",7
+"CB-36","CB Smith","High human modification","December",2025,"Open Grassy",0.0502,"Open Human Disturbed",1
+"VV-33","Vista View","High human modification","December",2025,"Open Grassy",0.0203,"Open Human Disturbed",2
+"VV-34","Vista View","High human modification","December",2025,"Open Grassy",0.0052,"Open Human Disturbed",1
+"VV-35","Vista View","High human modification","December",2025,"Open Grassy",0.005,"Open Human Disturbed",0
+"VV-36","Vista View","High human modification","December",2025,"Open Grassy",0.07,"Open Human Disturbed",2
+"MT-25","Military Trail","Low human modification","December",2025,"Oak Dominated Scrub",2e-04,"Scrub",0
+"MT-26","Military Trail","Low human modification","December",2025,"Sand Pine Scrub",2e-04,"Scrub",0
+"MT-27","Military Trail","Low human modification","December",2025,"Disturbed Edge",1e-04,"Transitional Human Disturbed",1
+"HK-25","Helene Klein","Low human modification","December",2025,"Pine Flatwoods",2e-04,"Flatwoods",1
+"HK-26","Helene Klein","Low human modification","December",2025,"Pine Flatwoods",0.0026,"Flatwoods",0
+"HK-27","Helene Klein","Low human modification","December",2025,"Pine Flatwoods",0.0051,"Flatwoods",0
+"QW-37","Quiet Waters","High human modification","December",2025,"Open Grassy",0.0078,"Open Human Disturbed",4
+"QW-38","Quiet Waters","High human modification","December",2025,"Open Grassy",0.0602,"Open Human Disturbed",8
+"QW-39","Quiet Waters","High human modification","December",2025,"Open Grassy",0.1125,"Open Human Disturbed",21
+"QW-40","Quiet Waters","High human modification","December",2025,"Open Grassy",0.12,"Open Human Disturbed",7
+"LK-25","Long Key","Low human modification","December",2025,"Hammock",0,"Hammock",0
+"LK-26","Long Key","Low human modification","December",2025,"Open Grassy",0.1125,"Open Human Disturbed",5
+"LK-27","Long Key","Low human modification","December",2025,"Hammock",0,"Hammock",0
+"HS-25","Highlands Scrub","Low human modification","December",2025,"Sand Pine Scrub",0,"Scrub",0
+"HS-26","Highlands Scrub","Low human modification","December",2025,"Disturbed Edge",0.0127,"Transitional Human Disturbed",4
+"HS-27","Highlands Scrub","Low human modification","December",2025,"Sand Pine Scrub",3e-04,"Scrub",0
+"VV-37","Vista View","High human modification","January",2026,"Open Grassy",0.0151,"Open Human Disturbed",0
+"VV-38","Vista View","High human modification","January",2026,"Open Grassy",0.01,"Open Human Disturbed",0
+"VV-39","Vista View","High human modification","January",2026,"Open Grassy",0.0127,"Open Human Disturbed",0
+"VV-40","Vista View","High human modification","January",2026,"Open Grassy",2e-04,"Open Human Disturbed",0
+"MK-51","Markham","High human modification","January",2026,"Open Grassy",0.0503,"Open Human Disturbed",5
+"MK-52","Markham","High human modification","January",2026,"Open Grassy",0.01,"Open Human Disturbed",0
+"MK-53","Markham","High human modification","January",2026,"Australian Pine Forest",1e-04,"Transitional Human Disturbed",0
+"MK-54","Markham","High human modification","January",2026,"Hammock",0,"Hammock",0
+"MK-55","Markham","High human modification","January",2026,"Open Grassy",0,"Open Human Disturbed",0
+"CB-37","CB Smith","High human modification","January",2026,"Open Grassy",0.1053,"Open Human Disturbed",5
+"CB-38","CB Smith","High human modification","January",2026,"Open Grassy",0.0029,"Open Human Disturbed",0
+"CB-39","CB Smith","High human modification","January",2026,"Open Grassy",0.0627,"Open Human Disturbed",3
+"CB-40","CB Smith","High human modification","January",2026,"Open Grassy",0.0075,"Open Human Disturbed",0
+"QW-41","Quiet Waters","High human modification","January",2026,"Open Grassy",0.0053,"Open Human Disturbed",0
+"QW-42","Quiet Waters","High human modification","January",2026,"Open Grassy",0.0226,"Open Human Disturbed",0
+"QW-43","Quiet Waters","High human modification","January",2026,"Open Grassy",0.0705,"Open Human Disturbed",6
+"QW-44","Quiet Waters","High human modification","January",2026,"Pine Flatwoods",3e-04,"Flatwoods",0
+"HK-28","Helene Klein","Low human modification","January",2026,"Pine Flatwoods",0,"Flatwoods",0
+"HK-29","Helene Klein","Low human modification","January",2026,"Pine Flatwoods",1e-04,"Flatwoods",0
+"HK-30","Helene Klein","Low human modification","January",2026,"Pine Flatwoods",0,"Flatwoods",0
+"MT-28","Military Trail","Low human modification","January",2026,"Scrubby Flatwoods",0.0255,"Scrub",3
+"MT-29","Military Trail","Low human modification","January",2026,"Sand Pine Scrub",0,"Scrub",0
+"MT-30","Military Trail","Low human modification","January",2026,"Oak Dominated Scrub",1e-04,"Scrub",0
+"HS-28","Highlands Scrub","Low human modification","January",2026,"Sand Pine Scrub",4e-04,"Scrub",0
+"HS-29","Highlands Scrub","Low human modification","January",2026,"Sand Pine Scrub",1e-04,"Scrub",0
+"HS-30","Highlands Scrub","Low human modification","January",2026,"Sand Pine Scrub",0.0077,"Scrub",2
+"LK-28","Long Key","Low human modification","January",2026,"Disturbed Edge",2e-04,"Transitional Human Disturbed",0
+"LK-29","Long Key","Low human modification","January",2026,"Hammock",0,"Hammock",0
+"LK-30","Long Key","Low human modification","January",2026,"Wetland",0,"Wetland",0
+"CB-41","CB Smith","High human modification","February",2026,"Open Grassy",2e-04,"Open Human Disturbed",0
+"CB-42","CB Smith","High human modification","February",2026,"Open Grassy",0.0525,"Open Human Disturbed",1
+"CB-43","CB Smith","High human modification","February",2026,"Open Grassy",1e-04,"Open Human Disturbed",0
+"CB-44","CB Smith","High human modification","February",2026,"Open Grassy",3e-04,"Open Human Disturbed",0
+"MK-56","Markham","High human modification","February",2026,"Australian Pine Forest",0,"Transitional Human Disturbed",0
+"MK-57","Markham","High human modification","February",2026,"Open Grassy",0,"Open Human Disturbed",0
+"MK-58","Markham","High human modification","February",2026,"Open Grassy",1e-04,"Open Human Disturbed",1
+"MK-59","Markham","High human modification","February",2026,"Hammock",0,"Hammock",0
+"MK-60","Markham","High human modification","February",2026,"Open Grassy",1e-04,"Open Human Disturbed",0
+"VV-41","Vista View","High human modification","February",2026,"Open Grassy",4e-04,"Open Human Disturbed",0
+"VV-42","Vista View","High human modification","February",2026,"Open Grassy",2e-04,"Open Human Disturbed",0
+"VV-43","Vista View","High human modification","February",2026,"Open Grassy",2e-04,"Open Human Disturbed",3
+"VV-44","Vista View","High human modification","February",2026,"Open Grassy",0.035,"Open Human Disturbed",2
+"QW-45","Quiet Waters","High human modification","February",2026,"Open Grassy",5e-04,"Open Human Disturbed",0
+"QW-46","Quiet Waters","High human modification","February",2026,"Open Grassy",0.003,"Open Human Disturbed",10
+"QW-47","Quiet Waters","High human modification","February",2026,"Open Grassy",3e-04,"Open Human Disturbed",2
+"QW-48","Quiet Waters","High human modification","February",2026,"Pine Flatwoods",2e-04,"Flatwoods",2
+"HS-31","Highlands Scrub","Low human modification","February",2026,"Sand Pine Scrub",0.0228,"Scrub",0
+"HS-32","Highlands Scrub","Low human modification","February",2026,"Sand Pine Scrub",1e-04,"Scrub",0
+"HS-33","Highlands Scrub","Low human modification","February",2026,"Sand Pine Scrub",0,"Scrub",0
+"MT-31","Military Trail","Low human modification","February",2026,"Oak Dominated Scrub",0.0029,"Scrub",0
+"MT-32","Military Trail","Low human modification","February",2026,"Sand Pine Scrub",0,"Scrub",0
+"MT-33","Military Trail","Low human modification","February",2026,"Scrubby Flatwoods",2e-04,"Scrub",0
+"HK-31","Helene Klein","Low human modification","February",2026,"Pine Flatwoods",0,"Flatwoods",0
+"HK-32","Helene Klein","Low human modification","February",2026,"Pine Flatwoods",0,"Flatwoods",0
+"HK-33","Helene Klein","Low human modification","February",2026,"Pine Flatwoods",1e-04,"Flatwoods",0
+"LK-31","Long Key","Low human modification","February",2026,"Hammock",0,"Hammock",0
+"LK-32","Long Key","Low human modification","February",2026,"Open Grassy",0,"Open Human Disturbed",0
+"LK-33","Long Key","Low human modification","February",2026,"Wetland",0,"Wetland",0
+"QW-49","Quiet Waters","High human modification","March",2026,"Open Grassy",8e-04,"Open Human Disturbed",3
+"QW-50","Quiet Waters","High human modification","March",2026,"Open Grassy",4e-04,"Open Human Disturbed",2
+"QW-51","Quiet Waters","High human modification","March",2026,"Ephemeral Wetland",0,"Wetland",0
+"QW-52","Quiet Waters","High human modification","March",2026,"Open Grassy",4e-04,"Open Human Disturbed",0
+"MT-34","Military Trail","Low human modification","March",2026,"Scrubby Flatwoods",0.0204,"Scrub",3
+"MT-35","Military Trail","Low human modification","March",2026,"Oak Dominated Scrub",3e-04,"Scrub",5
+"MT-36","Military Trail","Low human modification","March",2026,"Oak Dominated Scrub",0.0052,"Scrub",2
+"HS-34","Highlands Scrub","Low human modification","March",2026,"Disturbed Edge",3e-04,"Transitional Human Disturbed",0
+"HS-35","Highlands Scrub","Low human modification","March",2026,"Sand Pine Scrub",0,"Scrub",0
+"HS-36","Highlands Scrub","Low human modification","March",2026,"Sand Pine Scrub",4e-04,"Scrub",0
+"LK-34","Long Key","Low human modification","March",2026,"Hammock",1e-04,"Hammock",0
+"LK-35","Long Key","Low human modification","March",2026,"Open Grassy",0,"Open Human Disturbed",0
+"LK-36","Long Key","Low human modification","March",2026,"Wetland",2e-04,"Wetland",0
+"CB-45","CB Smith","High human modification","March",2026,"Open Grassy",3e-04,"Open Human Disturbed",0
+"CB-46","CB Smith","High human modification","March",2026,"Open Grassy",0,"Open Human Disturbed",0
+"CB-47","CB Smith","High human modification","March",2026,"Open Grassy",0.0029,"Open Human Disturbed",0
+"CB-48","CB Smith","High human modification","March",2026,"Open Grassy",3e-04,"Open Human Disturbed",0
+"VV-45","Vista View","High human modification","March",2026,"Open Grassy",1e-04,"Open Human Disturbed",1
+"VV-46","Vista View","High human modification","March",2026,"Open Grassy",2e-04,"Open Human Disturbed",0
+"VV-47","Vista View","High human modification","March",2026,"Dry Prairie",0,"Prairie",0
+"VV-48","Vista View","High human modification","March",2026,"Dry Prairie",0,"Prairie",0
+"MK-61","Markham","High human modification","March",2026,"Hammock",0,"Hammock",0
+"MK-62","Markham","High human modification","March",2026,"Open Grassy",1e-04,"Open Human Disturbed",0
+"MK-63","Markham","High human modification","March",2026,"Open Grassy",0.0754,"Open Human Disturbed",5
+"MK-64","Markham","High human modification","March",2026,"Open Grassy",0.0101,"Open Human Disturbed",2
+"MK-65","Markham","High human modification","March",2026,"Hammock",0,"Hammock",0
+"HK-34","Helene Klein","Low human modification","March",2026,"Pine Flatwoods",2e-04,"Flatwoods",0
+"HK-35","Helene Klein","Low human modification","March",2026,"Pine Flatwoods",0,"Flatwoods",0
+"HK-36","Helene Klein","Low human modification","March",2026,"Pine Flatwoods",0,"Flatwoods",0
+"MK-66","Markham","High human modification","April",2026,"Open Grassy",0.0029,"Open Human Disturbed",0
+"MK-67","Markham","High human modification","April",2026,"Open Grassy",5e-04,"Open Human Disturbed",0
+"MK-68","Markham","High human modification","April",2026,"Open Grassy",0.0053,"Open Human Disturbed",0
+"MK-69","Markham","High human modification","April",2026,"Hammock",0.0028,"Hammock",6
+"MK-70","Markham","High human modification","April",2026,"Hammock",0.0025,"Hammock",1
+"CB-49","CB Smith","High human modification","April",2026,"Open Grassy",0.0103,"Open Human Disturbed",0
+"CB-50","CB Smith","High human modification","April",2026,"Open Grassy",0.0128,"Open Human Disturbed",4
+"CB-51","CB Smith","High human modification","April",2026,"Open Grassy",0.0076,"Open Human Disturbed",0
+"CB-52","CB Smith","High human modification","April",2026,"Open Grassy",0.0052,"Open Human Disturbed",1
+"VV-49","Vista View","High human modification","April",2026,"Open Grassy",0.0528,"Open Human Disturbed",6
+"VV-50","Vista View","High human modification","April",2026,"Open Grassy",0.0602,"Open Human Disturbed",2
+"VV-51","Vista View","High human modification","April",2026,"Open Grassy",0.0504,"Open Human Disturbed",0
+"VV-52","Vista View","High human modification","April",2026,"Open Grassy",0.0052,"Open Human Disturbed",4
+"MT-37","Military Trail","Low human modification","April",2026,"Sand Pine Scrub",0.0075,"Scrub",0
+"MT-38","Military Trail","Low human modification","April",2026,"Sand Pine Scrub",0.0053,"Scrub",3
+"MT-39","Military Trail","Low human modification","April",2026,"Scrubby Flatwoods",0.0352,"Scrub",10
+"QW-53","Quiet Waters","High human modification","April",2026,"Pine Flatwoods",0.02,"Flatwoods",1
+"QW-54","Quiet Waters","High human modification","April",2026,"Open Grassy",0.005,"Open Human Disturbed",0
+"QW-55","Quiet Waters","High human modification","April",2026,"Open Grassy",0.0058,"Open Human Disturbed",3
+"QW-56","Quiet Waters","High human modification","April",2026,"Open Grassy",0.0154,"Open Human Disturbed",2
+"HK-37","Helene Klein","Low human modification","April",2026,"Pine Flatwoods",0.0078,"Flatwoods",1
+"HK-38","Helene Klein","Low human modification","April",2026,"Pine Flatwoods",1e-04,"Flatwoods",0
+"HK-39","Helene Klein","Low human modification","April",2026,"Pine Flatwoods",0,"Flatwoods",0
+"HS-37","Highlands Scrub","Low human modification","April",2026,"Sand Pine Scrub",0.0026,"Scrub",2
+"HS-38","Highlands Scrub","Low human modification","April",2026,"Sand Pine Scrub",1e-04,"Scrub",0
+"HS-39","Highlands Scrub","Low human modification","April",2026,"Sand Pine Scrub",1e-04,"Scrub",1
+"LK-37","Long Key","Low human modification","April",2026,"Open Grassy",0.0205,"Open Human Disturbed",12
+"LK-38","Long Key","Low human modification","April",2026,"Hammock",0.0075,"Hammock",0
+"LK-39","Long Key","Low human modification","April",2026,"Wetland",0,"Wetland",13
