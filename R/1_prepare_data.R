@@ -113,7 +113,7 @@ ggplot(combined_df, aes(x = n, fill = dataset, color = dataset)) +
   theme_classic()
 
 
-## now trying the plot that Cprey wanted
+## now trying the plot that Corey wanted
 park_overlap_plot <- combined_df %>%
   distinct(Park.Name, park_overlap, park_overlap_count)
 
