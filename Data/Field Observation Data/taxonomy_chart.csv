@@ -1,0 +1,44 @@
+Insect_ID,Insect.Common.Name,Insect.Order,Insect.Family,Insect.Genus,Insect.Species,subfamily,superfamily
+Agapostemon splendens,Brown-winged Striped Sweat Bee,Hymenoptera,Halictidae,Agapostemon,splendens,,Apoidea
+Ammophila pictipennis,Ammophila pictipennis,Hymenoptera,Sphecidae,Ammophila,pictipennis,,Apoidea
+Anoplius americanus,Anoplius americanus,Hymenoptera,Pompilidae,Anoplius,americanus,,Pompiloidea
+Apis mellifera,Western Honey Bee,Hymenoptera,Apidae,Apis,mellifera,,Apoidea
+Augochlora pura,Pure Green Sweat Bee,Hymenoptera,Halictidae,Augochlora,pura,,Apoidea
+Ceratina floridana,Florida Small Carpenter ,Hymenoptera,Apidae,Ceratina,floridana,,Apoidea
+Coelioxys slossoni,Coelioxys slossoni,Hymenoptera,Megachilidae,Coelioxys,slossoni,,Apoidea
+Dielis dorsata,Caribbean Scoliid Wasp,Hymenoptera, Scoliidae,Dielis,dorsata,,Scolioidea
+Dielis plumipes,Feather-legged Scoliid Wasp,Hymenoptera,Scoliidae,Dielis,plumipes,,Scolioidea
+Dielis trifasciata,Three-banded Scoliid Wasp,Hymenoptera,Scoliidae,Dielis,trifasciata,,Scolioidea
+Euphoria sepulcralis,Dark Flower Scarab,Coleoptera,Scarabaeidae,Euphoria,sepulcralis,Cetoniinae,
+Family Halictidae,Sweat and Furrow Bees,Hymenoptera,Halictidae,,,,Apoidea
+Family Pompilidae,Spider Wasps,Hymenoptera,Pompilidae,,,,Pompiloidea
+Genus Agapostemon,Striped Sweat Bees,Hymenoptera,Halictidae,Agapostemon,,,Apoidea
+Genus Anomalon,Genus Anomalon,Hymenoptera,Ichneumonidae,Anomalon,,,Ichneumonoidea
+Genus Coelioxys,Sharptail Bees,Hymenoptera,Megachilidae,Coelioxys,,,Apoidea
+Genus Colletes,Cellophane Bees,Hymenoptera,Colletidae,Colletes,,,Apoidea
+Genus Dielis,Genus Dielis,Hymenoptera,Scoliidae,Dielis,,,Scolioidea
+Genus Lasioglossum,Genus Lasioglossum,Hymenoptera,Halictidae,Lasioglossum,,,Apoidea
+Genus Megachile,"Leafcutter, Mortar, and Resin Bees",Hymenoptera,Megachilidae,Megachile,,,Apoidea
+Genus Myzinum,New World Banded Thynnid Wasps,Hymenoptera,Thynnidae,Myzinum,,,Thynnoidea
+Genus Polistes,Umbrella Paper Wasps,Hymenoptera,Vespidae,Polistes,,,Vespoidea
+Genus Prionyx,Prionyx,Hymenoptera,Sphecidae,Prionyx,,,Apoidea
+Genus Tachytes,"Square-headed Wasps, Sand Wasps, and Allies",Hymenoptera,Crabronidae,Tachytes,,,Apoidea
+Halictus poeyi,Poey's Furrow Bee ,Hymenoptera,Halictidae,Halictus,poeyi,,Apoidea
+Lasioglossum gemmatum,Complex Lasioglossum gemmatum,Hymenoptera,Halictidae,Lasioglossum,gemmatum,,Apoidea
+Lasioglossum nymphale,Lasioglossum nymphale,Hymenoptera,Halictidae,Lasioglossum,nymphale,,Apoidea
+Megachile petulans,Petulant Leafcutter Bee,Hymenoptera,Megachilidae,Megachile,petulans,,Apoidea
+Megachile pruina,Hoary Leafcutter Bee,Hymenoptera,Megachilidae,Megachile,pruina,,Apoidea
+Mischocyttarus mexicanus,Mexican Paper Wasp,Hymenoptera,Vespidae,Mischocyttarus,mexicanus,,Vespoidea
+Myzinum carolinianum,Myzinum carolinianum,Hymenoptera,Thynnidae,Myzinum,carolinianum,,Thynnoidea
+Myzinum dubiosum,Myzinum dubiosum,Hymenoptera,Thynnidae,Myzinum,dubiosum,,Thynnoidea
+Nomia maneei,Manee's Nomia,Hymenoptera,Halictidae,Nomia,maneei,,Apoidea
+Pachodynerus erynnis,Red-marked Pachodynerus Wasp,Hymenoptera,Vespidae,Pachodynerus,erynnis,,Vespoidea
+Pachodynerus nasidens,Keyhole Wasp,Hymenoptera,Vespidae,Pachodynerus,nasidens,,Vespoidea
+Pimpla marginella,Pimpla marginella,Hymenoptera,Ichneumonidae,Pimpla,marginella,,Ichneumonoidea
+Polistes bellicosus,Southern Paper Wasp,Hymenoptera,Vespidae,Polistes,bellicosus,,Vespoidea
+Polistes dorsalis,Hunter's Little Paper Wasp,Hymenoptera,Vespidae,Polistes,dorsalis,,Vespoidea
+Polistes major,Horse Paper Wasp,Hymenoptera,Vespidae,Polistes,major,,Vespoidea
+Polistes major ssp. major,Polistes major ssp. major,Hymenoptera,Vespidae,Polistes,major ssp. major,,Vespoidea
+Sceliphron caementarium,Yellow-legged Mud-dauber Wasp,Hymenoptera,Sphecidae,Sceliphron,caementarium,,Apoidea
+Scolia nobilitata,Noble Scoliid Wasp,Hymenoptera,Scoliidae,Scolia,nobilitata,,Scolioidea
+Trigonopeltastes delta,Delta Flower Scarab,Coleoptera,Scarabaeidae,Trigonopeltastes,delta,Cetoniinae,

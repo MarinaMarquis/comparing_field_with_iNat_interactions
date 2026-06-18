@@ -25,10 +25,78 @@ inat <- read.csv("Data/iNat_Data/interactions_data_4_4_2025.csv")
 
 ##############################################################################################################################
 
+# filter the field dataset to meet the pollinator definition of the iNaturalist dataset
+
+# to do this, we got subfamily and superfamily taxonomic information to join to field data
+taxonomic_chart <- read.csv("Data/Field Observation Data/taxonomy_chart.csv") %>%
+  select(Insect_ID, subfamily, superfamily)
+
+field_dat <- left_join(field_dat, taxonomic_chart, by="Insect_ID")
+
+# now we need to filter according to this definition: 
+# superfamily Apoidea, family Bombyliidae, subfamily Cetoniinae, order Lepidoptera, and subfamily Lepturinae
+field_dat_filtered <- field_dat %>%
+  filter((Insect.Order == "Lepidoptera") |
+           (Insect.Order == "Diptera" & Insect.Family == "Bombyliidae") |
+           (Insect.Order == "Hymenoptera" & superfamily == "Apoidea") |
+           (Insect.Order == "Coleoptera" & Insect.Family == "Scarabaeidae" & subfamily == "Cetoniinae") |
+           (Insect.Order == "Coleoptera" & Insect.Family == "Scarabaeidae" & subfamily == "Lepturinae"))
+
+# we also need to remove pollinators not identified to species
+field_dat_filtered <- field_dat_filtered %>%
+  filter(complete.cases(Insect.Species),
+         Insect.Species != "")
+
+nrow(field_dat)
+nrow(field_dat_filtered)
+
+nrow(field_dat_filtered)/nrow(field_dat)*100
+
+write.csv(field_dat_filtered, "Data/Field Observation Data/interaction_data_clean_filtered.csv")
+
+##############################################################################################################################
+
+# determine how many species in the inat dataset have are in the field dataset. This denotes that they 
+# meet the definition of pollinator that was set up for that project. All other pollinators will need to be 
+# mannually examined to determine if they meet the same definition of pollinator set for the field data.
+
+inat_sp <- unique(inat$Taxon.name)
+field_sp <- unique(field_dat_filtered$Insect_ID)
+
+# remove subspecies from inat data
+inat_sp <- inat_sp %>%
+  str_trim() %>%
+  .[str_count(., "\\S+") >= 2] %>%  # remove the one genus-level species
+  word(1, 2) %>%                    # remove subspecies designation
+  unique()
+
+inat_sp <- unique(inat_sp)
+
+# remove extra spaces from field_sp
+field_sp <- field_sp %>%
+  str_squish()
+
+species_not_in_field <- setdiff(inat_sp, field_sp)
+species_not_in_field
+
+species_in_both <- intersect(inat_sp, field_sp)
+species_in_both
+
+length(field_sp)
+length(inat_sp)
+length(species_not_in_field)
+length(species_in_both)
+
+# save the species that were not found in the field. We will use it to manually determine if they are pollinators
+species_not_in_field_df <- data.frame(species=species_not_in_field)
+
+write_csv(species_not_in_field_df, "Data/Pollinator Definition/species_only_in_inat_dataset.csv")
+
+##############################################################################################################################
 
 ## We'll need to harmonize these data sets
 
-field_filt <- field_dat %>%
+field_filt <- field_dat_filtered %>%
   select(-Plot.Identifier, -Notes, -Second.iNat.link, -Month, -Year) %>%
   rename(URL = iNat.Link)
 
