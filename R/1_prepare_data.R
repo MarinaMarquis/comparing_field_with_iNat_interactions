@@ -21,7 +21,7 @@ library(ggplot2)
 field_dat <- read.csv("Data/Field Observation Data/interaction_data_clean.csv")
 
 ## Now iNat data from the same parks
-inat <- read.csv("Data/iNat_Data/interactions_data_4_4_2025.csv")
+inat <- readRDS("Data/iNat_Data/interactions_data_annotated.RDS")
 
 ##############################################################################################################################
 
@@ -118,7 +118,7 @@ inat_filtered <- inat %>%
 nrow(inat)-nrow(inat_filtered)
 # only 4
 
-saveRDS(inat_filtered, "Data/iNat_Data/harmonized_inaturalist_data.RDS")
+saveRDS(inat_filtered, "Data/iNat_Data/inat_cleaned_w_annotation.RDS")
 
 
 ##############################################################################################################################
