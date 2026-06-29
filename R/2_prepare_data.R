@@ -209,6 +209,8 @@ combined_df <- bind_rows(inat_cols, field_cols) %>%
 saveRDS(combined_df, "Data/combined_interaction_data.RDS")
 
 ##############################################################################################################################
+
+
 #### Time for figures
 
 
@@ -372,10 +374,98 @@ ggplot(accum_summary, aes(x = Observation_Number, y = Mean_Richness)) +
   theme_classic()
 
 
+## Option 3: Three rarefaction curves, one for field data, one for iNat data, 
+#  and one for both combined 
+
+# Combine iNat and field interactions
+combined_interactions <- bind_rows(
+  field_filt %>% select(Interaction.ID),
+  inat_new %>% select(Interaction.ID)
+)
 
 
+# Function to run accumulation curves
+run_accumulation <- function(df, dataset_name, n_reps = 500){
+  accum_results <- bind_rows(
+    lapply(
+      seq_len(n_reps),
+      function(x){
+        accum_fun(df) %>%
+          mutate(
+            Replicate = x,
+            Dataset = dataset_name
+          )
+      }
+    )
+  )
+  
+  accum_results %>%
+    group_by(Dataset, Observation_Number) %>%
+    summarise(
+      Mean_Richness = mean(Richness),
+      Lower_CI = quantile(Richness, 0.025),
+      Upper_CI = quantile(Richness, 0.975),
+      .groups = "drop"
+    )
+}
+
+# Run for all three datasets: field data only, iNat data only, and combined
+field_summary <- run_accumulation(
+  field_filt,
+  "Field Data")
+
+inat_summary <- run_accumulation(
+  inat_new,
+  "iNaturalist Data")
+
+combined_summary <- run_accumulation(
+  combined_interactions,
+  "Combined")
+
+# Combine results
+accum_summary_all <- bind_rows(
+  field_summary,
+  inat_summary,
+  combined_summary)
+
+# Now plot it 
+ggplot(accum_summary_all, aes(x = Observation_Number, y = Mean_Richness)) +
+  geom_ribbon(aes(ymin = Lower_CI, ymax = Upper_CI),
+    alpha = 0.2) +
+  geom_line(linewidth = 1) +
+  facet_wrap(~ Dataset, nrow = 1, scales = "free_x") +
+  labs(
+    x = "Number of Observations",
+    y = "Interaction Richness") +
+  theme_classic()
 
 
+### Figure: Shared versus iNat only interaction richness for each interaction, 
+#   separated by Order. Each graph is one insect order. Bars in these graphs
+#   represent plant-pollinator interactions, with each graph showing a different
+#   plant-pollinator interaction. Pollinators are grouped by family. So it's 
+#   really "Plant | Pollinator Family" for each bar. Bars are split by interaction
+#   richness from the iNat data set only versus interaction richness from both iNat
+#   and field data sets (shared). 
 
 
+# Pollinator family interaction column for field data 
+field_family <- field_filt %>%
+  mutate(
+    Family_Interaction = paste(
+      Plant_ID,
+      Insect.Family,
+      sep = " | "
+    )
+  ) %>%
+  select(
+    Park.Name,
+    Insect.Order,
+    Insect.Family,
+    Family_Interaction
+  ) %>%
+  mutate(dataset = "Field")
+
+# Need family names for all pollinator sp. in the iNat df. I can get some of them
+# from field data but others I will have to look up. Tabling this for now. 
 
