@@ -52,7 +52,7 @@ nrow(field_dat_filtered)
 
 nrow(field_dat_filtered)/nrow(field_dat)*100
 
-write.csv(field_dat_filtered, "Data/Field Observation Data/interaction_data_clean_filtered.csv")
+saveRDS(field_dat_filtered, "Data/Field Observation Data/interaction_data_clean_filtered.RDS")
 
 ##############################################################################################################################
 
