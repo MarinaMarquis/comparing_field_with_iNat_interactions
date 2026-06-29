@@ -94,13 +94,42 @@ write_csv(species_not_in_field_df, "Data/Pollinator Definition/species_only_in_i
 
 ##############################################################################################################################
 
+# Read in the excel file where we manually determined the definition of pollinators for those that were not found
+# in the field
+
+pollinator_def <- read_csv("Data/Pollinator Definition/species_only_in_inat_dataset_QAQC.csv")
+
+# select only species that did not qualify as pollinators
+not_pollinators <- pollinator_def %>%
+  filter(pollinator_QAQC=="N")
+
+# remove those species from the iNaturalist dataset
+inat_filtered <- inat %>%
+  # remove subspecies
+  mutate(
+    Taxon.name = Taxon.name %>%
+      str_trim() %>%
+      word(1, 2)
+  ) %>%
+  filter(str_count(Taxon.name, "\\S+") >= 2) %>%
+  filter(!Taxon.name %in% not_pollinators$species)
+
+# how many rows of data did this remove 
+nrow(inat)-nrow(inat_filtered)
+# only 4
+
+saveRDS(inat_filtered, "Data/iNat_Data/harmonized_inaturalist_data.RDS")
+
+
+##############################################################################################################################
+
 ## We'll need to harmonize these data sets
 
 field_filt <- field_dat_filtered %>%
   select(-Plot.Identifier, -Notes, -Second.iNat.link, -Month, -Year) %>%
   rename(URL = iNat.Link)
 
-inat_filt <- inat %>%
+inat_filt <- inat_filtered %>%
   select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
 
 # Need to make a list of the parks with both sets of names
@@ -176,6 +205,8 @@ combined_df <- bind_rows(inat_cols, field_cols) %>%
   mutate(park_overlap_count = n_distinct(Interaction.ID)) %>% #number of unique interactions that are unique to iNat, unique to field, 
   #or shared for each park 
   ungroup()
+
+saveRDS(combined_df, "Data/combined_interaction_data.RDS")
 
 ##############################################################################################################################
 #### Time for figures
