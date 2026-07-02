@@ -123,6 +123,12 @@ saveRDS(inat_filtered, "Data/iNat_Data/inat_cleaned_w_annotation.RDS")
 
 ##############################################################################################################################
 
+
+inat_filtered <- readRDS("Data/iNat_Data/inat_cleaned_w_annotation.RDS")
+
+inat_annotated_on_inat <- inat_filtered %>%
+  filter(!taxon.name == "NA")
+
 ## We'll need to harmonize these data sets
 
 field_filt <- field_dat_filtered %>%
@@ -130,6 +136,9 @@ field_filt <- field_dat_filtered %>%
   rename(URL = iNat.Link)
 
 inat_filt <- inat_filtered %>%
+  select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
+
+inat_filt_annot <- inat_annotated_on_inat %>%
   select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
 
 # Need to make a list of the parks with both sets of names
@@ -161,6 +170,17 @@ inat_new <- inat_new %>%
          Interaction.ID = paste(Plant_ID, Taxon.name, sep = " | "))
 
 
+###now do this with the annotated data set
+inat_annot_new <- inat_filt_annot %>%
+  left_join(parks, by = "Park.name") %>%
+  select(-Park.name) %>%
+  filter(Park.Name %in% field_filt$Park.Name, !URL %in% field_filt$URL) %>%
+  filter(!Flower_species == "NA", !Flower_species == ".")
+
+inat_annot_new <- inat_annot_new %>%
+  mutate(Plant_ID = paste(Flower_Genus, Flower_species),
+         Interaction.ID = paste(Plant_ID, Taxon.name, sep = " | "))
+
 #### Now let's see if we can find the interactions that are unique to each park
 #### from both data sets 
 
@@ -190,8 +210,21 @@ field_cols <- field_filt %>%
   distinct(Park.Name, Interaction.ID, .keep_all = TRUE) %>%
   ungroup()
 
+#inat sub-category that were annotated on iNat
+inat_annot_cols <- inat_annot_new %>%
+  select(Park.Name, Interaction.ID) %>%
+  mutate(dataset = "iNaturalist annotated") %>%
+  group_by(Park.Name, Interaction.ID) %>%
+  mutate(n = n()) %>% 
+  ungroup() %>%
+  group_by(Park.Name) %>%
+  mutate(park_int_distinct = n_distinct(Interaction.ID), #interaction richness in each park (how many UNIQUE interactions)
+         park_int_total = sum(n)) %>%  #abundance of interactions in each park (how many interactions total)
+  distinct(Park.Name, Interaction.ID, .keep_all = TRUE) %>%
+  ungroup()
+
 # Combine them
-combined_df <- bind_rows(inat_cols, field_cols) %>%
+combined_df <- bind_rows(inat_cols, field_cols, inat_annot_cols) %>%
   group_by(Park.Name, Interaction.ID) %>%
   mutate(
     park_overlap = case_when(
@@ -209,53 +242,6 @@ combined_df <- bind_rows(inat_cols, field_cols) %>%
 saveRDS(combined_df, "Data/combined_interaction_data.RDS")
 
 ##############################################################################################################################
-
-
-#### Time for figures
-
-
-## Quick density plots for total interactions
-ggplot(combined_df, aes(x = n, fill = dataset, color = dataset)) +
-  geom_density(alpha = 0.35, linewidth = 1) +
-  facet_wrap(~ Park.Name, scales = "free_y") +
-  labs(
-    x = "Interaction abundance",
-    y = "Density",
-    fill = "Dataset",
-    color = "Dataset"
-  ) +
-  theme_classic()
-
-
-## Now trying the plot that Corey wanted
-park_overlap_plot <- combined_df %>%
-  distinct(Park.Name, park_overlap, park_overlap_count)
-
-ggplot(park_overlap_plot, aes(
-  x = Park.Name,
-  y = park_overlap_count,
-  fill = park_overlap
-)) +
-  geom_col() +
-  labs(
-    x = "Park",
-    y = "Number of unique interactions",
-    fill = "Overlap category"
-  ) +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1)
-  ) 
-
-## Another option: flipped axes 
-ggplot(park_overlap_plot, aes(x = Park.Name, y = park_overlap_count, fill = park_overlap)) +
-  geom_col() +
-  coord_flip() +
-  labs(
-    x = "Park",
-    y = "Unique Interaction Richness",
-    fill = "Overlap category") +
-  theme_bw()
 
 
 ### Figure: Accumulation of interaction richness documented by iNat photos compared to interaction richness documented in the field
