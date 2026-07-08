@@ -134,6 +134,9 @@ inat_annotated_on_inat <- inat_filtered %>%
 field_filt <- field_dat_filtered %>%
   select(-Plot.Identifier, -Notes, -Second.iNat.link, -Month, -Year) %>%
   rename(URL = iNat.Link)
+#Save for use in other scripts
+write_csv(field_filt, "Data/Field Observation Data/filtered_field_data.csv")
+
 
 inat_filt <- inat_filtered %>%
   select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
@@ -168,9 +171,11 @@ inat_new <- inat_filt %>%
 inat_new <- inat_new %>%
   mutate(Plant_ID = paste(Flower_Genus, Flower_species),
          Interaction.ID = paste(Plant_ID, Taxon.name, sep = " | "))
+# Save for use in other scripts
+write_csv(inat_new, "Data/iNat_Data/filtered_and_harmonized_iNat_data.csv")
 
 
-###now do this with the annotated data set
+### Now do this with the annotated data set
 inat_annot_new <- inat_filt_annot %>%
   left_join(parks, by = "Park.name") %>%
   select(-Park.name) %>%
@@ -180,6 +185,9 @@ inat_annot_new <- inat_filt_annot %>%
 inat_annot_new <- inat_annot_new %>%
   mutate(Plant_ID = paste(Flower_Genus, Flower_species),
          Interaction.ID = paste(Plant_ID, Taxon.name, sep = " | "))
+# Save for use in other scripts
+write_csv(inat_annot_new, "Data/iNat_Data/filtered_and_harmonized_annotated_iNat_data.csv")
+
 
 #### Now let's see if we can find the interactions that are unique to each park
 #### from both data sets 
@@ -244,214 +252,4 @@ saveRDS(combined_df, "Data/combined_interaction_data.RDS")
 ##############################################################################################################################
 
 
-### Figure: Accumulation of interaction richness documented by iNat photos compared to interaction richness documented in the field
-
-
-## Option 1: Assuming each row (observation) is a photo. We may want to re-label the x-axis to say Number of iNaturalist Observations
-#            later, since each observation can have many photos but many of the photo numbers are missing from our data set so we
-#             can't use this metric. No Randomization of interactions in this first figure. 
-
-# Make columns into photo numbers
-inat_curve <- inat_new %>%
-  mutate(Photo_Number = row_number())
-
-# Cumulative interaction richness from iNat
-inat_curve <- inat_curve %>%
-  mutate(
-    Cumulative_Interaction_Richness =
-      sapply(
-        seq_along(Interaction.ID),
-        function(i)
-          n_distinct(Interaction.ID[1:i])
-      )
-  )
-
-# Field-collected interaction richness 
-field_interaction_richness <- field_filt %>%
-  distinct(Interaction.ID) %>%
-  nrow()
-field_interaction_richness
-
-# Plot it
-ggplot(inat_curve, aes(x = Photo_Number, y = Cumulative_Interaction_Richness)) +
-  geom_line(aes(color = "iNaturalist richness"), linewidth = 1) +
-  geom_hline(
-    aes(yintercept = field_interaction_richness, color = "Field richness"),
-    linetype = "dashed",
-    linewidth = 1) +
-  scale_color_manual(
-    name = "",
-    values = c(
-      "iNaturalist richness" = "black",
-      "Field richness" = "red")) +
-  labs(
-    x = "Number of iNaturalist Photos",
-    y = "Cumulative Interaction Richness",
-    title = "Interaction Richness Accumulation from iNaturalist Observations") +
-  theme_classic()
-
-
-
-## Option 2: The same as the previous figure, but now observations are randomly reordered before calculating interaction richness
-            
-
-# Re-order observations before calculating cumulative interaction richness. Many randomizations (reshuffles). Build function here. 
-accum_fun <- function(df) {
-  df_rand <- df %>%
-    slice_sample(prop = 1)
-  data.frame(
-    Observation_Number = seq_len(nrow(df_rand)),
-    Richness = sapply(
-      seq_len(nrow(df_rand)),
-      function(i) {
-        n_distinct(df_rand$Interaction.ID[1:i])
-      }
-    )
-  )
-}
-
-set.seed(123)
-n_reps <- 500   #500 randomizations (reshuffles)
-
-# Run the function. 
-accum_results <- bind_rows(
-  lapply(
-    seq_len(n_reps),
-    function(x) {
-      
-      accum_fun(inat_new) %>%
-        mutate(Replicate = x)
-      
-    }
-  )
-)
-
-# Calculate mean richness and confidence intervals
-accum_summary <- accum_results %>%
-  group_by(Observation_Number) %>%
-  summarise(
-    Mean_Richness = mean(Richness),
-    Lower_CI = quantile(Richness, 0.025),
-    Upper_CI = quantile(Richness, 0.975),
-    .groups = "drop"
-  )
-
-# Plot it
-ggplot(accum_summary, aes(x = Observation_Number, y = Mean_Richness)) +
-  geom_ribbon(aes(ymin = Lower_CI, ymax = Upper_CI), alpha = 0.2) +
-  geom_line(aes(color = "iNaturalist richness"), linewidth = 1) +
-  geom_hline(
-    aes(
-      yintercept = field_interaction_richness,
-      color = "Field richness"
-    ),
-    linetype = "dashed",
-    linewidth = 1) +
-  scale_color_manual(
-    name = "",
-    values = c(
-      "iNaturalist richness" = "black",
-      "Field richness" = "red"
-    )) +
-  labs(
-    x = "Number of iNaturalist Observations",
-    y = "Interaction Richness",
-    title = "Interaction Accumulation Curve for iNaturalist Observations") +
-  theme_classic()
-
-
-## Option 3: Three rarefaction curves, one for field data, one for iNat data, 
-#  and one for both combined 
-
-# Combine iNat and field interactions
-combined_interactions <- bind_rows(
-  field_filt %>% select(Interaction.ID),
-  inat_new %>% select(Interaction.ID)
-)
-
-
-# Function to run accumulation curves
-run_accumulation <- function(df, dataset_name, n_reps = 500){
-  accum_results <- bind_rows(
-    lapply(
-      seq_len(n_reps),
-      function(x){
-        accum_fun(df) %>%
-          mutate(
-            Replicate = x,
-            Dataset = dataset_name
-          )
-      }
-    )
-  )
-  
-  accum_results %>%
-    group_by(Dataset, Observation_Number) %>%
-    summarise(
-      Mean_Richness = mean(Richness),
-      Lower_CI = quantile(Richness, 0.025),
-      Upper_CI = quantile(Richness, 0.975),
-      .groups = "drop"
-    )
-}
-
-# Run for all three datasets: field data only, iNat data only, and combined
-field_summary <- run_accumulation(
-  field_filt,
-  "Field Data")
-
-inat_summary <- run_accumulation(
-  inat_new,
-  "iNaturalist Data")
-
-combined_summary <- run_accumulation(
-  combined_interactions,
-  "Combined")
-
-# Combine results
-accum_summary_all <- bind_rows(
-  field_summary,
-  inat_summary,
-  combined_summary)
-
-# Now plot it 
-ggplot(accum_summary_all, aes(x = Observation_Number, y = Mean_Richness)) +
-  geom_ribbon(aes(ymin = Lower_CI, ymax = Upper_CI),
-    alpha = 0.2) +
-  geom_line(linewidth = 1) +
-  facet_wrap(~ Dataset, nrow = 1, scales = "free_x") +
-  labs(
-    x = "Number of Observations",
-    y = "Interaction Richness") +
-  theme_classic()
-
-
-### Figure: Shared versus iNat only interaction richness for each interaction, 
-#   separated by Order. Each graph is one insect order. Bars in these graphs
-#   represent plant-pollinator interactions, with each graph showing a different
-#   plant-pollinator interaction. Pollinators are grouped by family. So it's 
-#   really "Plant | Pollinator Family" for each bar. Bars are split by interaction
-#   richness from the iNat data set only versus interaction richness from both iNat
-#   and field data sets (shared). 
-
-
-# Pollinator family interaction column for field data 
-field_family <- field_filt %>%
-  mutate(
-    Family_Interaction = paste(
-      Plant_ID,
-      Insect.Family,
-      sep = " | "
-    )
-  ) %>%
-  select(
-    Park.Name,
-    Insect.Order,
-    Insect.Family,
-    Family_Interaction
-  ) %>%
-  mutate(dataset = "Field")
-
-# Need family names for all pollinator sp. in the iNat df. I can get some of them
-# from field data but others I will have to look up. Tabling this for now. 
 
