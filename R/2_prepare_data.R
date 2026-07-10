@@ -158,7 +158,7 @@ parks <- data.frame(
 
 
 ### Join to the iNat data frame.
-### Also removing interactions where we don't have the plant species
+### Also removing interactions where we don't have the plant species and species with low (<80%) confidence in ID
 ### Make sure that none of the iNat obs match the ones uploaded by Marina
 ### from her professional data set
 
@@ -166,7 +166,8 @@ inat_new <- inat_filt %>%
   left_join(parks, by = "Park.name") %>%
   select(-Park.name) %>%
   filter(Park.Name %in% field_filt$Park.Name, !URL %in% field_filt$URL) %>%
-  filter(!Flower_species == "NA", !Flower_species == ".")
+  filter(!Flower_species == "NA",
+         FLW_ID_Conf %in% c(">80%", "100%"))
 
 inat_new <- inat_new %>%
   mutate(Plant_ID = paste(Flower_Genus, Flower_species),
@@ -180,7 +181,8 @@ inat_annot_new <- inat_filt_annot %>%
   left_join(parks, by = "Park.name") %>%
   select(-Park.name) %>%
   filter(Park.Name %in% field_filt$Park.Name, !URL %in% field_filt$URL) %>%
-  filter(!Flower_species == "NA", !Flower_species == ".")
+  filter(!Flower_species == "NA",
+         FLW_ID_Conf %in% c(">80%", "100%"))
 
 inat_annot_new <- inat_annot_new %>%
   mutate(Plant_ID = paste(Flower_Genus, Flower_species),
@@ -236,9 +238,9 @@ combined_df <- bind_rows(inat_cols, field_cols, inat_annot_cols) %>%
   group_by(Park.Name, Interaction.ID) %>%
   mutate(
     park_overlap = case_when(
-      all(c("iNaturalist", "Field Collection") %in% dataset) ~ "shared",
-      "iNaturalist" %in% dataset ~ "iNat only",
-      "Field Collection" %in% dataset ~ "field exclusive"
+      all(c("iNaturalist", "Field Collection") %in% dataset) ~ "Shared",
+      "iNaturalist" %in% dataset ~ "iNaturalist only",
+      "Field Collection" %in% dataset ~ "Fieldwork only"
     )
   ) %>%
   ungroup() %>%

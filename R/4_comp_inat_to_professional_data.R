@@ -1,21 +1,13 @@
-#### Making figures ####
+# Analyze data and create figures
 
-#############################################################################
-### Load packages 
-
+# Load packages 
 library(tidyverse)
 library(readr)
 library(dplyr)
 library(ggplot2)
 library(ggpattern)
 
-#############################################################################
-
-
-
-
-#############################################################################
-### Read in data
+# Read in data ------------------------------------------------------------
 
 # Combined data frame that interaction richness and abundance per park for 
 # each data set
@@ -30,13 +22,8 @@ inat_new <- read.csv("Data/iNat_Data/filtered_and_harmonized_iNat_data.csv")
 # Filtered and harmonized iNat data annotated on iNat
 inat_annot_new <- read.csv("Data/iNat_Data/filtered_and_harmonized_annotated_iNat_data.csv")
 
-#############################################################################
 
-
-
-
-#############################################################################
-#### SUMMARY STATISTICS ###
+# Summary statistics ------------------------------------------------------
 
 #total interactions
 sum(unique(combined_df$park_int_total))
@@ -48,32 +35,39 @@ length(unique(combined_df$Interaction.ID))
 tot_unique <- combined_df %>%
   group_by(park_overlap) %>%
   summarize(tot_uni = length(unique(Interaction.ID)))
-
+tot_unique
 
 # total interactions within each dataset
 totals <- combined_df %>%
   group_by(dataset) %>%
   summarize(total_n = sum(unique(park_int_total)))
+totals
 
 totals_combined <- combined_df %>%
   group_by(park_overlap)%>%
   summarize(total_n = sum(unique(park_int_total)))
+totals_combined
 
-#############################################################################
-
-
-
-
-
-
-#############################################################################
-#### Time for figures
-
+# Figures -----------------------------------------------------------------
 
 ## Quick density plots for total interactions
 ggplot(combined_df, aes(x = n, fill = dataset, color = dataset)) +
   geom_density(alpha = 0.35, linewidth = 1) +
   facet_wrap(~ Park.Name, scales = "free_y") +
+  scale_fill_manual(
+    values = c(
+      "iNaturalist" = "green3",
+      "Field Collection" = "blue2",
+      "iNaturalist annotated" = "red"
+    )
+  ) +
+  scale_color_manual(
+    values = c(
+      "iNaturalist" = "green3",
+      "Field Collection" = "blue2",
+      "iNaturalist annotated" = "red"
+    )
+  ) +
   labs(
     x = "Interaction abundance",
     y = "Density",
@@ -85,23 +79,34 @@ ggplot(combined_df, aes(x = n, fill = dataset, color = dataset)) +
 
 ## Now trying the plot that Corey wanted
 park_overlap_plot <- combined_df %>%
-  distinct(Park.Name, park_overlap, park_overlap_count)
+  distinct(Park.Name, park_overlap, park_overlap_count) %>%
+  mutate(park_overlap=factor(park_overlap, levels=c("iNaturalist only", "Shared", "Fieldwork only")))
 
 ggplot(park_overlap_plot, aes(
   x = Park.Name,
   y = park_overlap_count,
   fill = park_overlap
 )) +
+  scale_fill_manual(
+    values = c(
+      "iNaturalist only" = "#33A02C",  # green
+      "Fieldwork only" = "#3567D7",    # blue
+      "Shared" = "#19D4D9"             # cyan/teal
+    )
+  ) +
   geom_col() +
   labs(
-    x = "Park",
+    x = "Greenspace",
     y = "Number of unique interactions",
-    fill = "Overlap category"
+    fill = "Source"
   ) +
-  theme_bw() +
+  theme_bw(base_size=18) +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1)
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid=element_blank()
   )
+
+ggsave("Figures/inat_shared_field_comparison_by_park.png", height=6, width=8, units="in")
 
 ## How about a sub-plot that looks at the iNat data only, and the difference between those annotated on 
 ## iNat already and those that Thomas et al. had to go through
@@ -138,8 +143,8 @@ plot_df <- inat_no %>%
     category = factor(
       category,
       levels = c("num_no_annot", "park_int_uni"),
-      labels = c("iNaturalist",
-                 "iNaturalist, annotated")
+      labels = c("iNaturalist manually\ncurated dataset",
+                 "iNaturalist annotations")
     )
   )
 
@@ -157,12 +162,12 @@ ggplot(plot_df, aes(x = Park.Name, y = interaction_richness, fill = category, pa
     pattern_key_scale_factor = 0.6
   ) +
   scale_fill_manual(values = c(
-    "iNaturalist" = "#00BA38",
-    "iNaturalist, annotated" = "#00BA38"
+    "iNaturalist manually\ncurated dataset" = "#33A02C",
+    "iNaturalist annotations" = "#33A02C"
   )) +
   scale_pattern_manual(values = c(
-    "iNaturalist" = "none",
-    "iNaturalist, annotated" = "stripe"
+    "iNaturalist manually\ncurated dataset" = "none",
+    "iNaturalist annotations" = "stripe"
   )) +
   labs(
     x = "Park",
@@ -170,28 +175,13 @@ ggplot(plot_df, aes(x = Park.Name, y = interaction_richness, fill = category, pa
     fill = "Category",
     pattern = "Category"
   ) +
-  theme_minimal()
-
-
-ggplot(inat_no, aes(
-  x = Park.Name,
-  y = park_int_distinct,
-  fill = dataset
-)) +
-  geom_col() +
-  labs(
-    x = "Park",
-    y = "Number of unique interactions",
-    fill = "Categorization"
-  ) +
-  scale_fill_manual(values = c(
-    "iNaturalist" = "#00BA38",
-    "iNaturalist annotated" = "lightgreen"
-  )) +
-  theme_bw() +
+  theme_bw(base_size=18) +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1)
-  ) 
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid=element_blank()
+  )
+
+ggsave("Figures/inat_and_inat_annotated_comparison_by_park.png", height=7, width=9, units="in")
 
 
 
@@ -274,15 +264,15 @@ accum_results_iNat_annotation_in_lab <- bind_rows(
 # iNat data annotated in iNat only, and iNat/field combined
 field_summary <- run_accumulation(
   field_filt,
-  "Field Data")
+  "Fieldwork Data")
 
 inat_lab_summary <- run_accumulation(
   inat_new,
-  "Lab Annotated iNaturalist Data")
+  "iNaturalist Manually\nCurated Dataset")
 
 inat_online_annotation_summary <- run_accumulation(
   inat_annot_new,
-  "iNaturalist Annotated Data")
+  "iNaturalist Annotations")
 
 combined_summary <- run_accumulation(
   combined_interactions,
@@ -293,7 +283,18 @@ accum_summary_all <- bind_rows(
   field_summary,
   inat_lab_summary,
   inat_online_annotation_summary,
-  combined_summary)
+  combined_summary) %>%
+  mutate(
+    Dataset = factor(
+      Dataset,
+      levels = c(
+        "Combined",
+        "Fieldwork Data",
+        "iNaturalist Manually\nCurated Dataset",
+        "iNaturalist Annotations"
+      )
+    )
+  )
 
 # Subset of data with just iNat accumulation curves
 accum_summary_iNat <- bind_rows(
@@ -310,18 +311,18 @@ ggplot(accum_summary_iNat, aes(x = Observation_Number, y = Mean_Richness)) +
     color = NA) +
   geom_line(aes(color = Dataset, group = Dataset), linewidth = 1) +
   geom_hline(
-    aes(yintercept = field_interaction_richness, color = "Field Data"),
+    aes(yintercept = field_interaction_richness, color = "Fieldwork Data"),
     linetype = "dashed",
     linewidth = 1) +
   scale_color_manual(
     breaks = c(
-      "Lab Annotated iNaturalist Data",
-      "iNaturalist Annotated Data",
-      "Field Data"),
+      "iNaturalist Manually\nCurated Dataset",
+      "iNaturalist Annotations",
+      "Fieldwork Data"),
     values = c(
-      "Lab Annotated iNaturalist Data" = "black",
-      "iNaturalist Annotated Data" = "steelblue",
-      "Field Data" = "red"))+
+      "iNaturalist Manually\nCurated Dataset" = "black",
+      "iNaturalist Annotations" = "steelblue",
+      "Fieldwork Data" = "red"))+
   guides(
     fill = "none",
     color = guide_legend(
@@ -331,8 +332,8 @@ ggplot(accum_summary_iNat, aes(x = Observation_Number, y = Mean_Richness)) +
       )))+
   scale_fill_manual(
     values = c(
-      "Lab Annotated iNaturalist Data" = "black",
-      "iNaturalist Annotated Data" = "steelblue")) +
+      "iNaturalist Manually\nCurated Dataset" = "black",
+      "iiNaturalist Annotations" = "steelblue")) +
   labs(
     x = "Number of Observations",
     y = "Interaction Richness",
@@ -345,12 +346,32 @@ ggplot(accum_summary_iNat, aes(x = Observation_Number, y = Mean_Richness)) +
 #   annotated in lab, one for iNat data annotated in iNat, and one for 
 #   iNat and field data combined
 
-ggplot(accum_summary_all, aes(x = Observation_Number, y = Mean_Richness)) +
-  geom_ribbon(aes(ymin = Lower_CI, ymax = Upper_CI),alpha = 0.2) +
+ggplot(accum_summary_all, aes(x = Observation_Number, y = Mean_Richness, color=Dataset)) +
+  geom_ribbon(aes(ymin = Lower_CI, ymax = Upper_CI, fill=Dataset),alpha = 0.2, color=NA) +
   geom_line(linewidth = 1) +
-  facet_wrap(~ Dataset, nrow = 1, scales = "free_x") +
+  scale_color_manual(
+    values = c(
+      "Combined" = "#19D4D9",
+      "Fieldwork Data" = "#3567D7",
+      "iNaturalist Annotations" = "#E4A924",
+      "iNaturalist Manually\nCurated Dataset" = "#33A02C"
+    )
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Combined" = "#19D4D9",
+      "Fieldwork Data" = "#3567D7",
+      "iNaturalist Annotated Data" = "#E4A924",
+      "iNaturalist Manually\nCurated Dataset" = "#33A02C"
+    )
+  ) +
+  facet_wrap(~ Dataset, nrow = 1) +
   labs(x = "Number of Observations", y = "Interaction Richness") +
-  theme_classic()
+  theme_bw(base_size=18) +
+  theme(panel.grid = element_blank()) +
+  theme(legend.position = "none")
+
+ggsave("Figures/rarefraction_curves_option1.png", height=5, width=10, units="in")
 
 
 # More colorful option: 
@@ -358,10 +379,50 @@ ggplot(accum_summary_all, aes(x = Observation_Number, y = Mean_Richness)) +
   geom_ribbon( aes( ymin = Lower_CI, ymax = Upper_CI ), 
                fill = "steelblue", alpha = 0.2, color = NA ) +  
   geom_line( linewidth = 1, color = "black" ) +  
-  facet_wrap( ~ Dataset, nrow = 1, scales = "free_x" ) + 
+  facet_wrap( ~ Dataset, nrow = 1) + 
   labs( x = "Number of Observations", y = "Interaction Richness" ) + 
   theme_classic()
 
+
+
+ggplot(accum_summary_all, 
+       aes(x = Observation_Number, 
+           y = Mean_Richness, 
+           color = Dataset)) +
+  geom_ribbon(
+    aes(ymin = Lower_CI, ymax = Upper_CI, fill = Dataset),
+    alpha = 0.2,
+    color = NA
+  ) +
+  geom_line(linewidth = 1.5) +
+  scale_color_manual(
+    values = c(
+      "Combined" = "#19D4D9",
+      "Fieldwork Data" = "#3567D7",
+      "iNaturalist Annotations" = "#E4A924",
+      "iNaturalist Manually\nCurated Dataset" = "#33A02C"
+    )
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Combined" = "#19D4D9",
+      "Fieldwork Data" = "#3567D7",
+      "iNaturalist Annotated Data" = "#E4A924",
+      "iNaturalist Manually\nCurated Dataset" = "#33A02C"
+    )
+  ) +
+  labs(
+    x = "Number of Observations",
+    y = "Interaction Richness",
+    color = "Dataset",
+    fill = "Dataset"
+  ) +
+  guides(fill = "none") +
+  theme_bw(base_size=18) +
+  theme(panel.grid = element_blank())
+
+
+ggsave("Figures/rarefraction_curves_option2.png", height=6, width=8, units="in")
 
 
 ### Figure: Interaction richness for each order in each data set. 
