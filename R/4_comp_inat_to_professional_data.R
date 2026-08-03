@@ -6,6 +6,10 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 library(ggpattern)
+library(httr)
+library(jsonlite)
+library(purrr)
+
 
 # Read in data ------------------------------------------------------------
 
@@ -425,6 +429,237 @@ ggplot(accum_summary_all,
 ggsave("Figures/rarefraction_curves_option2.png", height=6, width=8, units="in")
 
 
-### Figure: Interaction richness for each order in each data set. 
 
 
+
+
+
+### Figure: Interaction richness for each pollinator order in each data set. 
+
+## First we need to create order columns for all pollinator species in both iNat
+#  data sets
+
+# Obtain species names from iNat data sets 
+species <- bind_rows(
+  inat_new %>% select(Taxon.name),
+  inat_annot_new %>% select(Taxon.name)
+) %>%
+  distinct() %>%
+  arrange(Taxon.name)
+
+# Run a function to get insect orders (for each species in our data set) 
+# from iNaturalists 
+
+get_order <- function(species_name){
+  search_call <- paste0(                         # Search for the species
+    "https://api.inaturalist.org/v1/taxa?q=",
+    URLencode(species_name),
+    "&rank=species&per_page=1"
+  )
+  
+  search <- GET(search_call) %>%
+    content(as = "text", encoding = "UTF-8") %>%
+    fromJSON(simplifyVector = FALSE)
+
+  if(length(search$results) == 0){             # NA if no match 
+    return(
+      tibble(
+        Taxon.name = species_name,
+        Insect.Order = NA_character_
+      )
+    )
+  }
+  
+  ancestor_ids <- search$results[[1]]$ancestor_ids
+  
+  ancestor_call <- paste0(
+    "https://api.inaturalist.org/v1/taxa/",
+    paste(ancestor_ids, collapse = ",")
+  )
+  
+  ancestors <- GET(ancestor_call) %>%
+    content(as = "text", encoding = "UTF-8") %>%
+    fromJSON(simplifyVector = TRUE)
+  
+  order <- ancestors$results %>%
+    as_tibble() %>%
+    filter(rank == "order") %>%
+    pull(name)
+  
+  tibble(
+    Taxon.name = species_name,
+    Insect.Order = if(length(order) == 0) NA_character_ else order[1]
+  )
+}
+
+
+order_lookup <- map_dfr(
+  species$Taxon.name,
+  get_order
+)
+print(order_lookup)
+
+# Save it
+write_csv(
+  order_lookup,
+  "Data/iNat_Data/order_lookup.csv"
+)
+
+# Run it back in 
+order_lookup <- read_csv("Data/iNat_Data/order_lookup.csv")
+
+
+# Join order info with the iNat datasets 
+inat_new <- inat_new %>%
+  left_join(order_lookup, by = "Taxon.name")
+
+inat_annot_new <- inat_annot_new %>%
+  left_join(order_lookup, by = "Taxon.name")
+
+
+# Make sure it worked 
+table(inat_new$Insect.Order, useNA = "ifany")
+table(inat_annot_new$Insect.Order, useNA = "ifany")
+
+# New combined df with iNat and field interactions
+combined_order_df <- bind_rows(
+  field_filt %>%
+    select(Interaction.ID, Insect.Order),
+  
+  inat_new %>%
+    select(Interaction.ID, Insect.Order),
+  
+  inat_annot_new %>%
+    select(Interaction.ID, Insect.Order)
+) %>%
+  distinct()
+
+# Function to summarize interaction richness by insect order (how many interactions
+# with each insect order)
+summarize_order_richness <- function(df, dataset_name){
+  df %>%
+    distinct(Interaction.ID, Insect.Order) %>%
+    group_by(Insect.Order) %>%
+    summarise(
+      Interaction_Richness = n(),
+      .groups = "drop"
+    ) %>%
+    mutate(Dataset = dataset_name)
+}
+
+# Summarize each data set
+field_order <- summarize_order_richness(
+  field_filt,
+  "Fieldwork Data"
+)
+
+inat_lab_order <- summarize_order_richness(
+  inat_new,
+  "iNaturalist Manually Curated Dataset"
+)
+
+inat_annotation_order <- summarize_order_richness(
+  inat_annot_new,
+  "iNaturalist Annotations"
+)
+
+combined_order <- summarize_order_richness(
+  combined_order_df,
+  "Combined"
+)
+
+# Plot function
+plot_order_richness <- function(df, fill_color){
+  ggplot(df, aes(x = Insect.Order, y = Interaction_Richness) ) +
+    geom_col(fill = fill_color) +
+    labs(
+      x = "Pollinator Order",
+      y = "Pollinator Interaction Richness") +
+    theme_bw(base_size = 18) +
+    theme(panel.grid = element_blank())
+}
+
+
+# Plot the figures
+field_order_plot <- plot_order_richness(
+  field_order,
+  "#3567D7"
+)
+field_order_plot
+
+inat_lab_plot <- plot_order_richness(
+  inat_lab_order,
+  "#33A02C"
+)
+inat_lab_plot
+
+inat_annotation_plot <- plot_order_richness(
+  inat_annotation_order,
+  "#E4A924"
+)
+inat_annotation_plot
+
+combined_plot <- plot_order_richness(
+  combined_order,
+  "#19D4D9"
+)
+combined_plot
+
+## Place all these plots in one figure: 
+
+# Combine them 
+order_summary_all <- bind_rows(
+  field_order,
+  inat_lab_order,
+  inat_annotation_order,
+  combined_order
+) %>%
+  mutate(
+    Dataset = factor(
+      Dataset,
+      levels = c(
+        "Fieldwork Data",
+        "iNaturalist Manually Curated Dataset",
+        "iNaturalist Annotations",
+        "Combined"
+      )
+    )
+  )
+
+# Combined plot 
+ggplot(
+  order_summary_all,
+  aes(
+    x = Insect.Order,
+    y = Interaction_Richness,
+    fill = Dataset
+  )
+) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~Dataset, nrow = 2) +
+  scale_fill_manual(
+    values = c(
+      "Fieldwork Data" = "#3567D7",
+      "iNaturalist Manually Curated Dataset" = "#33A02C",
+      "iNaturalist Annotations" = "#E4A924",
+      "Combined" = "#19D4D9"
+    )
+  ) +
+  labs(
+    x = "Pollinator Order",
+    y = "Pollinator Interaction Richness"
+  ) +
+  theme_bw(base_size = 18) +
+  theme(
+    panel.grid = element_blank(),
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold")
+  )
+
+# Save it 
+ggsave(
+  "Figures/pollinator_order_interaction_richness.png",
+  height = 8,
+  width = 10,
+  units = "in"
+)
