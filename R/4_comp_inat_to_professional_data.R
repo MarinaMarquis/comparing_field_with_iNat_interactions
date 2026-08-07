@@ -624,7 +624,12 @@ order_summary_all <- bind_rows(
         "Combined"
       )
     )
-  )
+  ) %>%
+  group_by(Dataset) %>%
+  mutate(
+    Percentage = (Interaction_Richness / sum(Interaction_Richness)*100)
+  ) %>%
+  ungroup()
 
 # Combined plot 
 ggplot(
@@ -649,11 +654,13 @@ ggplot(
     x = "Pollinator Order",
     y = "Pollinator Interaction Richness"
   ) +
-  theme_bw(base_size = 18) +
+  theme_bw(base_size = 20) +
   theme(
     panel.grid = element_blank(),
-    strip.background = element_blank(),
-    strip.text = element_text(face = "bold")
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
   )
 
 # Save it 
@@ -663,3 +670,4 @@ ggsave(
   width = 10,
   units = "in"
 )
+
