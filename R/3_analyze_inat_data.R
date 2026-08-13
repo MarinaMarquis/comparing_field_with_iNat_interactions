@@ -6,6 +6,8 @@ library(tidyverse)
 # read in data
 inat_raw <- readRDS("Data/iNat_Data/inat_cleaned_w_annotation.RDS")
 
+inat_raw <- read_csv("Data/iNat_Data/filtered_and_harmonized_iNat_data.csv")
+
 # filter to only plant identifications, where we were over 80% confident
 inat <- inat_raw %>%
   filter(FLW_ID_Conf %in% c(">80%", "100%"))
@@ -16,8 +18,8 @@ paste("Percentage of observations with uncertain plant ID:", paste(round(100-(nr
 # Summary statistics ------------------------------------------------------
 
 # how many parks were examined?
-length(unique(inat$Park.name))
-# 38
+length(unique(inat$Park.Name))
+# 8
 
 # how many iNaturalist observations
 nrow(inat)
@@ -44,6 +46,8 @@ inat %>%
   filter(complete.cases(taxon.name)) %>%
   group_by(user.id) %>% 
   summarize(count=n(),
+            percentage=n()/nrow(inat %>%
+                                  filter(complete.cases(taxon.name)))*100,
             user.name=first(user.name)) %>%
   arrange(desc(count))
 

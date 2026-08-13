@@ -30,7 +30,10 @@ inat_annot_new <- read.csv("Data/iNat_Data/filtered_and_harmonized_annotated_iNa
 # Summary statistics ------------------------------------------------------
 
 #total interactions
-sum(unique(combined_df$park_int_total))
+combined_df %>%
+  filter(dataset != "iNaturalist annotated") %>%
+  distinct(dataset, Park.Name, park_int_total) %>%
+  summarise(total_interactions = sum(park_int_total, na.rm = TRUE))
 
 # unique interactions
 length(unique(combined_df$Interaction.ID))
@@ -43,8 +46,12 @@ tot_unique
 
 # total interactions within each dataset
 totals <- combined_df %>%
+  distinct(dataset, Park.Name, park_int_total) %>%
   group_by(dataset) %>%
-  summarize(total_n = sum(unique(park_int_total)))
+  summarise(
+    total_interactions = sum(park_int_total, na.rm = TRUE),
+    .groups = "drop"
+  )
 totals
 
 totals_combined <- combined_df %>%
@@ -516,6 +523,21 @@ inat_new <- inat_new %>%
 inat_annot_new <- inat_annot_new %>%
   left_join(order_lookup, by = "Taxon.name")
 
+# how many pollinator species are represented by group?
+inat_new %>%
+  group_by(Insect.Order) %>%
+  summarise(pollinators=n_distinct(Taxon.name),
+            plants=n_distinct(Plant_ID))
+
+inat_annot_new %>%
+  group_by(Insect.Order) %>%
+  summarise(pollinators=n_distinct(Taxon.name),
+            plants=n_distinct(Plant_ID))
+
+field_filt %>%
+  group_by(Insect.Order) %>%
+  summarise(pollinators=n_distinct(Insect_ID),
+            plants=n_distinct(Plant_ID))
 
 # Make sure it worked 
 table(inat_new$Insect.Order, useNA = "ifany")

@@ -139,10 +139,10 @@ write_csv(field_filt, "Data/Field Observation Data/filtered_field_data.csv")
 
 
 inat_filt <- inat_filtered %>%
-  select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
+  select(-id, -Notes, -Number.of.observation.photo, -Image.number)
 
 inat_filt_annot <- inat_annotated_on_inat %>%
-  select(-id, -Observed.on, -Notes, -Number.of.observation.photo, -Image.number)
+  select(-id, -Notes, -Number.of.observation.photo, -Image.number)
 
 # Need to make a list of the parks with both sets of names
 
@@ -175,6 +175,21 @@ inat_new <- inat_new %>%
 # Save for use in other scripts
 write_csv(inat_new, "Data/iNat_Data/filtered_and_harmonized_iNat_data.csv")
 
+# range of dates 
+inat_new %>%
+  mutate(date = mdy(Observed.on)) %>%
+  summarise(
+    min_date = min(date, na.rm = TRUE),
+    max_date = max(date, na.rm = TRUE),
+    lower_90 = as.Date(
+      quantile(as.numeric(date), 0.05, na.rm = TRUE),
+      origin = "1970-01-01"
+    ),
+    upper_90 = as.Date(
+      quantile(as.numeric(date), 0.95, na.rm = TRUE),
+      origin = "1970-01-01"
+    )
+  )
 
 ### Now do this with the annotated data set
 inat_annot_new <- inat_filt_annot %>%
@@ -203,7 +218,7 @@ inat_cols <- inat_new %>%
   ungroup() %>%
   group_by(Park.Name) %>%
   mutate(park_int_distinct = n_distinct(Interaction.ID), #interaction richness in each park (how many UNIQUE interactions)
-         park_int_total = sum(n)) %>%  #abundance of interactions in each park (how many interactions total)
+         park_int_total = n()) %>%  #abundance of interactions in each park (how many interactions total)
   distinct(Park.Name, Interaction.ID, .keep_all = TRUE) %>%
   ungroup()
 
@@ -216,7 +231,7 @@ field_cols <- field_filt %>%
   ungroup() %>%
   group_by(Park.Name) %>%
   mutate(park_int_distinct = n_distinct(Interaction.ID), #interaction richness in each park (how many UNIQUE interactions)
-         park_int_total = sum(n)) %>% #abundance of interactions in each park (how many interactions total)
+         park_int_total = n()) %>% #abundance of interactions in each park (how many interactions total)
   distinct(Park.Name, Interaction.ID, .keep_all = TRUE) %>%
   ungroup()
 
@@ -229,7 +244,7 @@ inat_annot_cols <- inat_annot_new %>%
   ungroup() %>%
   group_by(Park.Name) %>%
   mutate(park_int_distinct = n_distinct(Interaction.ID), #interaction richness in each park (how many UNIQUE interactions)
-         park_int_total = sum(n)) %>%  #abundance of interactions in each park (how many interactions total)
+         park_int_total = n()) %>%  #abundance of interactions in each park (how many interactions total)
   distinct(Park.Name, Interaction.ID, .keep_all = TRUE) %>%
   ungroup()
 
